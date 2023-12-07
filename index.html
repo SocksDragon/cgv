@@ -237,16 +237,18 @@
   <script src="./js/common.js"></script>
   
   <script>
+$(document).ready(function() {
     $(".gallery .text a").on("mouseover", function () {
-      let alt2 = `../CGV/img/index/`;
-      alt2 += $(this).find("strong").text();
-      alt2 += `.png`;
-      console.log(alt2);
+        let alt2 = `../CGV/img/index/`;
+        alt2 += $(this).find("strong").text();
+        alt2 += `.png`;
+        console.log(alt2);
 
-      $(".image img").attr({
-        src: alt2,
-      });
+        $(".image img").attr({
+            src: alt2,
+        });
     });
+});
     </script>
     <script>
       $("body").on("click", ".article1 ul li div a", function () {
