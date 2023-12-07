@@ -35,7 +35,7 @@ body {
 }
 
 #section .article1 .sect-common {
-  background: url(../img/theater/bg_showtimes_favorite.gif) no-repeat 0 0;
+  background: url(./img/theater/bg_showtimes_favorite.gif) no-repeat 0 0;
   background-size: 100%;
   width: 874px;
   height: 450px;
@@ -129,7 +129,7 @@ body {
   bottom: 0;
   width: 920px;
   padding: 20px 30px;
-  background: url(../img/theater/bg_dim80.png) 0 0 repeat;
+  background: url(./img/theater/bg_dim80.png) 0 0 repeat;
   color: #fdfcf0;
 }
 
