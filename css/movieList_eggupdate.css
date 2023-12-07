@@ -1,0 +1,7 @@
+@charset "utf-8";
+
+.egg-gage {
+  display: inline-block;
+  width: auto !important;
+  line-height: 1;
+}

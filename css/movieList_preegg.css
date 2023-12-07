@@ -1,0 +1,19 @@
+[class|="sect"][class*="wishlist"] .like,
+[class|="sect"][class*="chart"] .like {
+  text-align: left !important;
+}
+
+[class|="sect"][class*="wishlist"] .like .link-reservation,
+[class|="sect"][class*="chart"] .like .link-reservation {
+  width: 97px !important;
+  height: 25px !important;
+  background: url(https://img.cgv.co.kr/R2014/images/sprite/sprite_preegg.png) 0 -110px
+    no-repeat !important;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+  [class|="sect"][class*="wishlist"] .like .link-reservation,
+  [class|="sect"][class*="chart"] .like .link-reservation {
+    background-image: url("https://img.cgv.co.kr/R2014/images/sprite/sprite_preegg@2x.png");
+  }
+}

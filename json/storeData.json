@@ -1,0 +1,96 @@
+{
+  "store": [
+    {
+      "name": "<마야3: 숲속왕국의 위기>얼리버드 관람권 세트(2매)",
+      "productComposition": "<마야3: 숲속왕국의 위기> 얼리버드 관람권 2매",
+      "expirationPeriod": "<마야3: 숲속왕국의 위기 >얼리버드 관람권 : 구매일로부터 0개월 이내",
+      "price": 14000,
+      "origin": "팝콘(옥수수: 미국산)",
+      "image": "http://img.cgv.co.kr/GiftStore/Product/Pc/List/16915432964910.jpg",
+      "explaination": "바이바이"
+    },
+    {
+      "name": "우리 패키지",
+      "productComposition": "일반 영화 관람권 4매+더블콤보 1개",
+      "expirationPeriod": "CGV 영화관람권 : 구매일로부터 24개월 이내 더블콤보 : 구매일로부터 6개월 이내",
+      "price": 61000,
+      "origin": "팝콘(옥수수: 미국산)",
+      "image": "http://img.cgv.co.kr/GiftStore/Product/Pc/Detail/16778218053400.jpg",
+      "explaination": "우리랑 같이 먹자!!"
+    },
+    {
+      "name": "나랑 너 패키지",
+      "productComposition": "일반 영화 관람권 2매+CGV콤보 1개",
+      "expirationPeriod": "CGV 영화관람권 : 구매일로부터 24개월 이내  CGV콤보 : 구매일로부터 6개월 이내",
+      "price": 34000,
+      "origin": "팝콘(옥수수: 미국산)",
+      "image": "http://img.cgv.co.kr/GiftStore/Product/Pc/Detail/16778218053400.jpg",
+      "explaination": "너랑 나랑은 지금!"
+    },
+    {
+      "name": "좋은 날 패키지",
+      "productComposition": "일반 영화 관람권 2매+CGV콤보 1개",
+      "expirationPeriod": "CGV 영화관람권 : 구매일로부터 24개월 이내  CGV콤보 : 구매일로부터 6개월 이내",
+      "price": 34000,
+      "origin": "팝콘(옥수수: 미국산)",
+      "image": "http://img.cgv.co.kr/GiftStore/Product/Pc/Detail/16778206770810.jpg",
+      "explaination": "좋은날엔 CGV와 함께하세요"
+    },
+
+    {
+      "name": "탄산음료(M)",
+      "productComposition": "탄산음료(M)",
+      "expirationPeriod": "구매일로부터 6개월 이내",
+      "price": 2500,
+      "origin": "코카(콜라: 맛있다)",
+      "image": "http://img.cgv.co.kr/GiftStore/Product/Pc/Detail/16680718731810.jpg",
+      "explaination": "시원한 탄산음료와 함께 스트레스도 날리세요"
+    },
+    {
+      "name": "칠리치즈나쵸",
+      "productComposition": "칠리치즈나쭁!",
+      "expirationPeriod": "구매일로부터 6개월 이내",
+      "price": 4900,
+      "origin": "치즈(치즈: 미국산)",
+      "image": "http://img.cgv.co.kr/GiftStore/Product/Pc/Detail/16751302793100.jpg",
+      "explaination": "바삭바삭 나쵸, 얼마나 맛있게요?"
+    },
+    {
+      "name": "플레인핫도그",
+      "productComposition": "플레인핫도그",
+      "expirationPeriod": "구매일로부터 6개월 이내",
+      "price": 4900,
+      "origin": "돼지고기: 국내산",
+      "image": "http://img.cgv.co.kr/GiftStore/Product/Pc/Detail/15464120861130.jpg",
+      "explaination": "플레인 핫도그"
+    },
+    {
+      "name": "아메리카노(ICE)",
+      "productComposition": "아메리카노(ICE)",
+      "expirationPeriod": "구매일로부터 6개월 이내",
+      "price": 4000,
+      "origin": "커피(원두: 미국산)",
+      "image": "http://img.cgv.co.kr/GiftStore/Product/Pc/Detail/16784335520970.jpg",
+
+      "explaination": "현대인의 필수품"
+    },
+    {
+      "name": "오징어(완제품)",
+      "productComposition": "오징어(완제품)",
+      "expirationPeriod": "구매일로부터 6개월 이내",
+      "price": 3500,
+      "origin": "오징어(징징이: 울릉도)",
+      "image": "http://img.cgv.co.kr/GiftStore/Product/Pc/Detail/16757490561250.jpg",
+      "explaination": "한봉지로는 모자라요"
+    },
+    {
+      "name": "핑크레몬에이드",
+      "productComposition": "핑크레몬에이드 1",
+      "expirationPeriod": "구매일로부터 6개월 이내",
+      "price": 5000,
+      "origin": "별의 커비",
+      "image": "http://img.cgv.co.kr/GiftStore/Product/Pc/Detail/16784396509830.jpg",
+      "explaination": "커비레몬에이드"
+    }
+  ]
+}

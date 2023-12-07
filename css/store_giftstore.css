@@ -1,0 +1,1927 @@
+@charset "UTF-8";
+
+/* E Big Banner */
+
+/* S 카테고리 메뉴 & 받은선물/장바구니 */
+.category_wrap {
+  position: relative;
+  background-color: #fff;
+  border-bottom: 1px solid #cacaca;
+  z-index: -10;
+}
+.category_wrap.fixed_top {
+  position: fixed;
+  left: 0;
+  top: 60px;
+  width: 100%;
+  min-width: 1040px;
+  min-height: 49px;
+  margin-top: 0;
+  background-color: #fff;
+  z-index: 9;
+}
+.category_wrap.fixed_top + div {
+  padding-top: 140px;
+}
+.category_wrap.fixed_top + .targerbanner_wrap {
+  padding-top: 93px;
+}
+.category_wrap.fixed_top + .hotdeal_wrap,
+.category_wrap.fixed_top + .cart_step_wrap,
+.category_wrap.fixed_top + .category_product_list_wrap,
+.category_wrap.fixed_top + .cj_giftcard_introduce_wrap {
+  padding-top: 51px;
+}
+.category_wrap.fixed_top + .category_product_detail_wrap {
+  padding-top: 114px;
+}
+/* .category_wrap:after{content:''; position:absolute; bottom:0px; width:100%; height:1px; background-color:#cacaca; z-index:1} */
+.category_contents_wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  width: 980px;
+  min-width: 980px;
+  margin: 0 auto;
+  padding: 11px 0;
+  background-color: #fff;
+}
+/* S > 카테고리 메뉴 */
+.category_content {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  max-width: 740px;
+  line-height: 26px;
+}
+.category_content li.giftstore_logo {
+  display: none;
+  position: absolute;
+  left: 0;
+  padding-left: 4px;
+  padding-right: 18px;
+  background-color: #fff;
+  z-index: -9;
+}
+.category_content li.giftstore_logo + li {
+  padding-left: 0;
+  z-index: -8;
+}
+.category_content li.giftstore_logo a {
+  display: block;
+  width: 76px;
+  height: 22px;
+  font-size: 0;
+  background: transparent
+    url("http://img.cgv.co.kr/r2014/images/giftstore/common/bg_store_logo.png")
+    left top scroll no-repeat;
+}
+.category_content li a {
+  position: relative;
+  font-weight: 500;
+  font-size: 16px;
+  color: #666;
+}
+.category_content li.active a {
+  font-weight: 600;
+  color: #fb4357;
+}
+.category_content li:last-child {
+  padding-right: 0;
+}
+/* S > 받은선물/장바구니 */
+.cart_content {
+  display: flex;
+  align-items: center;
+  line-height: 26px;
+}
+.cart_content:before {
+  content: "";
+  display: inline-flex;
+  width: 1px;
+  height: 15px;
+  background-color: #cfcfcf;
+}
+.cart_content li {
+  display: inline-flex;
+  align-items: center;
+  padding-left: 12px;
+}
+.cart_content li:first-child {
+  padding-left: 23px;
+}
+.cart_content li a {
+  overflow: hidden;
+  font-weight: 500;
+  font-size: 16px;
+  color: #222;
+}
+.cart_content li a + span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  min-width: 12px;
+  margin-left: 8px;
+  font-weight: 500;
+  font-size: 13px;
+  color: #fff;
+  line-height: 20px;
+  text-align: center;
+  background-color: #fb4357;
+  border-radius: 10px;
+  outline: none;
+}
+/* E 카테고리 메뉴 & 받은선물/장바구니 */
+
+/* S 타켓배너 */
+.targerbanner_wrap {
+  overflow: hidden;
+  position: relative;
+  margin-top: 39px;
+  z-index: 8;
+}
+.targerbanner_wrap .bx-wrapper {
+  position: relative;
+  width: 902px;
+  margin: 0 auto;
+}
+.targerbanner_wrap .bx-wrapper .bx-viewport {
+  overflow: hidden;
+  height: auto;
+  border-radius: 10px;
+}
+.targerbanner_wrap .bx-wrapper .bx-viewport .bxslider li a {
+  display: block;
+  overflow: hidden;
+  height: 56px;
+  padding: 19px 45px;
+}
+.targerbanner_wrap .bx-wrapper .bx-viewport .bxslider li a:focus:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 896px;
+  height: 88px;
+  border-radius: 10px;
+  border: 3px solid #ead3d7;
+}
+.targerbanner_wrap .bx-wrapper .bx-viewport .bxslider li a strong {
+  float: left;
+  max-width: 30%;
+  margin-right: 40px;
+  font-family: "CJONLYONENEW";
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 28px;
+}
+.targerbanner_wrap .bx-wrapper .bx-viewport .bxslider li a span {
+  float: left;
+  position: absolute;
+  top: 50%;
+  max-width: 35%;
+  font-family: "CJONLYONENEW";
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 21px;
+  transform: translate(0, -50%);
+  -webkit-transform: translate(0, -50%);
+  -moz-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  -o-transform: translate(0, -50%);
+}
+.targerbanner_wrap .bx-wrapper .bx-controls {
+  position: absolute;
+  right: 42px;
+  top: 50%;
+  margin-top: -10px;
+}
+.targerbanner_wrap .bx-wrapper .bx-controls .bx-pager {
+  overflow: hidden;
+}
+.targerbanner_wrap .bx-wrapper .bx-controls .bx-pager .bx-pager-item {
+  float: left;
+  padding: 4px;
+  padding-left: 3px;
+}
+.targerbanner_wrap
+  .bx-wrapper
+  .bx-controls
+  .bx-pager
+  .bx-pager-item:first-child {
+  padding-left: 4px;
+}
+.targerbanner_wrap .bx-wrapper .bx-controls .bx-pager .bx-pager-item a {
+  display: block;
+  width: 11px;
+  height: 11px;
+  font-size: 0;
+  border-radius: 50%;
+  background-color: #595959;
+}
+.targerbanner_wrap .bx-wrapper .bx-controls .bx-pager .bx-pager-item a.active {
+  background-color: #fff;
+}
+/* E 타켓배너 */
+
+/* S 핫딜영역 */
+.hotdeal_wrap {
+  position: relative;
+  width: 900px;
+  margin: 45px auto 64px;
+  text-align: center;
+  z-index: 7;
+}
+.hotdeal_wrap .hotdeal_title {
+  padding-right: 33px;
+  font-family: "CJONLYONENEW";
+  font-weight: 700;
+  font-size: 30px;
+  color: #fb4357;
+  background: transparent
+    url("http://img.cgv.co.kr/r2014/images/giftstore/common/bg_hotdeal_big.png")
+    right top scroll no-repeat;
+}
+.hotdeal_wrap .hotdeal_subtitle {
+  position: relative;
+  top: 2px;
+  margin-bottom: 45px;
+}
+.hotdeal_wrap .hotdeal_subtitle:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  height: 2px;
+  background-color: #ad7b58;
+  z-index: 1;
+}
+.hotdeal_wrap .hotdeal_subtitle:after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  left: 35%;
+  top: 0%;
+  width: 30%;
+  height: 100%;
+  background-color: #fff;
+  z-index: 2;
+}
+.hotdeal_wrap .hotdeal_subtitle span {
+  position: relative;
+  font-family: "CJONLYONENEW";
+  font-weight: 400;
+  font-size: 21px;
+  color: #3d3d3d;
+  line-height: 26px;
+  z-index: 3;
+}
+.hotdeal_wrap .bx-wrapper {
+  position: relative;
+}
+/* .hotdeal_wrap .bx-wrapper .bx-viewport{} */
+
+.hotdeal_wrap .bxslider {
+  position: relative;
+  width: 100%;
+  height: 348px;
+}
+.hotdeal_wrap .bxslider li {
+  float: left;
+  position: relative;
+  width: 270px;
+  margin-right: 45px;
+  list-style: none;
+}
+.hotdeal_wrap .bxslider li:last-child {
+  margin-right: 0;
+}
+.hotdeal_wrap .bxslider li.comingsoon {
+  position: relative;
+}
+.hotdeal_wrap .bxslider li.comingsoon:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent
+    url("http://img.cgv.co.kr/r2014/images/giftstore/common/bg_hotdeal_default.png")
+    left top scroll no-repeat;
+  z-index: 1;
+}
+.hotdeal_wrap .bxslider li.comingsoon .comingsoon_period {
+  position: absolute;
+  left: 0;
+  top: 96px;
+  width: 100%;
+  font-family: "CJONLYONENEW";
+  font-weight: 300;
+  font-size: 21px;
+  color: #fff;
+  line-height: 26px;
+  z-index: 2;
+}
+.hotdeal_wrap .bxslider li.comingsoon .comingsoon_title {
+  position: absolute;
+  left: 0;
+  top: 177px;
+  width: 100%;
+  font-family: "CJONLYONENEW";
+  font-weight: 500;
+  font-size: 21px;
+  color: #fff;
+  line-height: 26px;
+  z-index: 3;
+}
+
+.hotdeal_wrap .bxslider li.soldout a {
+  position: relative;
+}
+.hotdeal_wrap .bxslider li.soldout a:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent
+    url("http://img.cgv.co.kr/r2014/images/giftstore/common/bg_com_list_style_soldout.png")
+    left top scroll no-repeat;
+  z-index: 1;
+}
+
+.hotdeal_wrap .bxslider li .hotdeal_time_remaining {
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  padding: 7px 11px;
+  color: #fff;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  border: 1px solid #fff;
+  z-index: 2;
+}
+.hotdeal_wrap .bxslider li > img {
+  width: 100%;
+}
+.hotdeal_wrap .bxslider li > a {
+  display: block;
+}
+.hotdeal_wrap .bxslider li > a img {
+  width: 100%;
+}
+.hotdeal_wrap .bxslider li strong {
+  display: block;
+  overflow: hidden;
+  margin-top: 23px;
+  font-family: "CJONLYONENEW";
+  font-weight: 500;
+  font-size: 20px;
+  color: #000;
+  text-align: center;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.hotdeal_wrap .bxslider li .com_sale_price_type1_wrap {
+  display: block;
+  margin-top: 6px;
+  font-family: "CJONLYONENEW";
+  font-weight: 500;
+  font-size: 0;
+}
+.hotdeal_wrap .bxslider li .com_sale_price_type1_wrap .sale_percent {
+  padding-left: 24px;
+  font-size: 18px;
+  color: #fb4357;
+  line-height: 24px;
+  background: transparent
+    url("http://img.cgv.co.kr/r2014/images/giftstore/common/bg_hotdeal_list.png")
+    left center scroll no-repeat;
+}
+.hotdeal_wrap .bxslider li .com_sale_price_type1_wrap .sale_percent:after {
+  content: "%";
+}
+.hotdeal_wrap
+  .bxslider
+  li
+  .com_sale_price_type1_wrap
+  .store_deatail_source_price {
+  padding-left: 2px;
+  font-size: 18px;
+  color: #000;
+  line-height: 24px;
+}
+.hotdeal_wrap
+  .bxslider
+  li
+  .com_sale_price_type1_wrap
+  .store_deatail_source_price:after {
+  content: "원";
+  font-weight: 400;
+}
+.hotdeal_wrap
+  .bxslider
+  li
+  .com_sale_price_type1_wrap
+  .store_deatail_sale_price {
+  padding-left: 10px;
+  font-weight: 400;
+  font-size: 16px;
+  color: #6a6f77;
+  line-height: 24px;
+  text-decoration: line-through;
+}
+.hotdeal_wrap
+  .bxslider
+  li
+  .com_sale_price_type1_wrap
+  .store_deatail_sale_price:after {
+  content: "원";
+  padding: 1px 0;
+  font-size: 15px;
+  line-height: 16px;
+  vertical-align: text-bottom;
+}
+
+.hotdeal_dday {
+  display: block;
+  margin-bottom: 7px;
+  padding-bottom: 4px;
+  font-family: "CJONLYONENEW";
+  font-weight: 300;
+  font-size: 13px;
+  color: #fff;
+  line-height: 15px;
+  border-bottom: 1px solid #fff;
+}
+.hotdeal_dday:before {
+  content: "D-";
+}
+
+.hotdeal_count {
+  display: block;
+  overflow: hidden;
+  font-family: "CJONLYONENEW";
+  font-weight: 500;
+  font-size: 0;
+  line-height: 0;
+}
+.hotdeal_count > span {
+  display: inline-block;
+  position: relative;
+  font-size: 14px;
+  line-height: 16px;
+}
+.hotdeal_count > span:after {
+  position: absolute;
+  left: 0;
+  top: 100%;
+}
+.hotdeal_count > span.ani {
+  animation: aniCnt 0.3s linear;
+}
+
+.hotdeal_count .hour00:after {
+  content: attr(data-hour00);
+}
+.hotdeal_count .hour0:after {
+  content: attr(data-hour0);
+}
+.hotdeal_count .min00:after {
+  content: attr(data-min00);
+}
+.hotdeal_count .min0:after {
+  content: attr(data-min0);
+}
+.hotdeal_count .sec00:after {
+  content: attr(data-sec00);
+}
+.hotdeal_count .sec0:after {
+  content: attr(data-sec0);
+}
+
+.hotdeal_rest_items {
+  display: block;
+  margin-top: 3px;
+  font-family: "CJONLYONENEW";
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 13px; /*visibility:hidden*/
+}
+.hotdeal_rest_items:after {
+  content: "개 남음";
+}
+
+/* .hotdeal_wrap .bx-wrapper .bx-controls{} */
+.hotdeal_wrap .bx-wrapper .bx-controls .bx-controls-direction {
+  position: absolute;
+  top: 113px;
+  width: 100%;
+}
+.hotdeal_wrap .bx-wrapper .bx-controls .bx-controls-direction .bx-prev {
+  position: absolute;
+  left: -42px;
+  width: 18px;
+  height: 30px;
+  font-size: 0;
+  background: transparent
+    url("http://img.cgv.co.kr/r2014/images/giftstore/common/bg_arrowBtn1.png")
+    left top scroll no-repeat;
+}
+.hotdeal_wrap .bx-wrapper .bx-controls .bx-controls-direction .bx-next {
+  position: absolute;
+  right: -42px;
+  width: 18px;
+  height: 30px;
+  font-size: 0;
+  background: transparent
+    url("http://img.cgv.co.kr/r2014/images/giftstore/common/bg_arrowBtn1.png")
+    left top scroll no-repeat;
+  transform: rotate(180deg);
+}
+/* E 핫딜영역 */
+
+/* S 예매고객 추천 */
+.customer_recommend_wrap {
+  padding: 77px 0;
+  background-color: #f3ebea;
+}
+.customer_recommend_wrap .customer_recommend {
+  display: block;
+  position: relative;
+  width: 980px;
+  margin: 0 auto;
+}
+.customer_recommend_wrap .customer_recommend .customer_recommend_user {
+  font-family: "CJONLYONENEW";
+  font-weight: 700;
+  font-size: 23px;
+  color: #000;
+  text-indent: 74px;
+  line-height: 34px;
+  letter-spacing: -0.25px;
+}
+.customer_recommend_wrap .customer_recommend .customer_recommend_user em {
+  float: left;
+  overflow: hidden;
+  max-width: 300px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.customer_recommend_wrap .customer_recommend .customer_recommend_user span {
+  font-weight: 500;
+  font-size: 20px;
+  color: #686868;
+  line-height: 34px;
+}
+.customer_recommend_wrap .customer_recommend img {
+  position: absolute;
+  right: 50px;
+  bottom: -22px;
+  width: 320px;
+  height: 300px;
+}
+
+.customer_recommend_wrap .customer_recommend_text_wrap {
+  display: block;
+  overflow: hidden;
+  width: 906px;
+  margin: 23px auto 0;
+  padding: 36px 0 37px 74px;
+  background-color: #fff;
+  border-radius: 100px;
+}
+.customer_recommend_wrap
+  .customer_recommend_text_wrap
+  .customer_recommend_text {
+  float: left;
+  font-family: "CJONLYONENEW";
+  font-weight: 500;
+  font-size: 27px;
+  letter-spacing: -0.25px;
+  line-height: 34px;
+  color: #000;
+}
+.customer_recommend_wrap
+  .customer_recommend_text_wrap
+  .customer_recommend_text
+  em {
+  display: inline-block;
+  overflow: hidden;
+  max-width: 158px;
+  text-overflow: ellipsis;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+.customer_recommend_wrap
+  .customer_recommend_text_wrap
+  .customer_recommend_text
+  span {
+  display: block;
+  margin-top: 15px;
+  font-weight: 300;
+  font-size: 16px;
+  color: #666a71;
+  letter-spacing: 0;
+  line-height: 22px;
+}
+.customer_recommend_wrap
+  .customer_recommend_text_wrap
+  .customer_recommend_subtext {
+  float: left;
+  position: relative;
+  width: 220px;
+  font-family: "CJONLYONENEW";
+  margin-top: 36px;
+  padding-left: 57px;
+  font-weight: 400;
+  letter-spacing: -0.25px;
+}
+.customer_recommend_wrap
+  .customer_recommend_text_wrap
+  .customer_recommend_subtext
+  .customer_recommend_title {
+  display: block;
+  font-weight: 700;
+  font-size: 21px;
+  color: #000;
+}
+.customer_recommend_wrap
+  .customer_recommend_text_wrap
+  .customer_recommend_subtext
+  .customer_recommend_name {
+  display: block;
+  margin-top: 5px;
+  font-size: 16px;
+  color: #000;
+}
+.customer_recommend_wrap
+  .customer_recommend_text_wrap
+  .customer_recommend_subtext
+  .customer_recommend_price {
+  display: block;
+  margin-top: 19px;
+}
+.customer_recommend_wrap
+  .customer_recommend_text_wrap
+  .customer_recommend_subtext
+  .customer_recommend_price
+  strong {
+  font-size: 19px;
+  color: #fb4357;
+  line-height: normal;
+}
+.customer_recommend_wrap
+  .customer_recommend_text_wrap
+  .customer_recommend_subtext
+  .customer_recommend_price
+  strong:after {
+  content: "원";
+}
+.customer_recommend_wrap
+  .customer_recommend_text_wrap
+  .customer_recommend_subtext
+  .customer_recommend_price
+  em {
+  padding-left: 15px;
+  font-size: 17px;
+  color: #6a6f77;
+  line-height: normal;
+  text-decoration: line-through;
+}
+.customer_recommend_wrap
+  .customer_recommend_text_wrap
+  .customer_recommend_subtext
+  .customer_recommend_price
+  em:after {
+  content: "원";
+}
+/* E 예매고객 추천 */
+
+/* S 베스트상품 10 */
+.best_product_wrap {
+  font-family: "CJONLYONENEW";
+  width: 980px;
+  margin: 0 auto;
+  padding: 150px 0 90px;
+}
+.best_product_wrap .best_product_title {
+  display: block;
+  width: 100%;
+  padding-bottom: 10px;
+  font-family: "CJONLYONENEW";
+  font-weight: 700;
+  font-size: 27px;
+  color: #000;
+  line-height: 1em;
+  border-bottom: 1px solid #999;
+}
+.best_product_wrap .best_product_title span {
+  padding-left: 12px;
+  font-weight: 300;
+  font-size: 19px;
+  color: #646464;
+  line-height: 23px;
+}
+.best_product_list {
+  overflow: hidden;
+  margin-top: 40px;
+  text-align: center;
+}
+.best_product_list.unit1 li {
+  margin: 0 auto;
+  float: none;
+}
+.best_product_list.unit2 li {
+  margin-left: 180px;
+}
+.best_product_list.unit3 li {
+  margin-left: 80px;
+}
+.best_product_list.unit4 li {
+  margin-left: 33px;
+}
+.best_product_list.unit4 li:first-child {
+  margin-left: 0;
+}
+.best_product_list.unit4 li:nth-child(3) {
+  margin-left: 34px;
+}
+
+.best_product_list li {
+  float: left;
+  position: relative;
+  width: 220px;
+}
+
+.best_product_list li .btn_best_product {
+  display: block;
+  position: relative;
+}
+.best_product_list li .btn_best_product .best_product_img_wrap {
+  display: block;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  border-radius: 50%;
+  z-index: 1;
+}
+.best_product_list li .btn_best_product .best_product_img_wrap img {
+  position: relative;
+  width: 100%;
+  z-index: 1;
+}
+.best_product_list li .btn_best_product ~ a {
+  position: absolute;
+  font-size: 0;
+  line-height: 0; /*display:none*/
+}
+.best_product_list
+  li.state_hotdeal
+  .btn_best_product
+  .best_product_img_wrap:after {
+  content: "핫딜 진행중";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 11px 0 15px;
+  font-weight: 500;
+  font-size: 14px;
+  color: #fff;
+  letter-spacing: -0.25px;
+  background-color: #fb4357;
+  z-index: 2;
+}
+
+.best_product_list li .btn_best_product .best_product_text_wrap {
+  font-family: "CJONLYONENEW";
+}
+.best_product_list
+  li
+  .btn_best_product
+  .best_product_text_wrap
+  .best_product_text_title {
+  display: block;
+  margin-top: 20px;
+  font-weight: 500;
+  font-size: 18px;
+  color: #000;
+}
+.best_product_list
+  li
+  .btn_best_product
+  .best_product_text_wrap
+  .best_product_text_name {
+  display: block;
+  margin-top: 5px;
+  font-weight: 400;
+  font-size: 16px;
+  color: #6a6f77;
+}
+.best_product_list
+  li
+  .btn_best_product
+  .best_product_text_wrap
+  .best_product_text_name
+  span {
+  padding-right: 4px;
+  color: #4e88cf;
+}
+.best_product_list
+  li
+  .btn_best_product
+  .best_product_text_wrap
+  .best_product_sale_price_wrap {
+  display: block;
+  margin-top: 7px;
+  font-size: 0;
+  letter-spacing: -0.25px;
+  text-align: center;
+}
+.best_product_list
+  li
+  .btn_best_product
+  .best_product_text_wrap
+  .best_product_sale_price_wrap
+  .sale_percent {
+  display: inline-block;
+  padding: 0 0px 0 4px;
+  font-weight: 500;
+  font-size: 17px;
+  color: #fb4357;
+}
+.best_product_list
+  li
+  .btn_best_product
+  .best_product_text_wrap
+  .best_product_sale_price_wrap
+  .sale_percent:after {
+  content: "%";
+  font-size: 13px;
+}
+.best_product_list
+  li
+  .btn_best_product
+  .best_product_text_wrap
+  .best_product_sale_price_wrap
+  .store_deatail_source_price {
+  display: inline-block;
+  padding: 0 4px;
+  font-weight: 400;
+  font-size: 18px;
+  color: #000;
+}
+.best_product_list
+  li
+  .btn_best_product
+  .best_product_text_wrap
+  .best_product_sale_price_wrap
+  .store_deatail_source_price:after {
+  content: "원";
+}
+.best_product_list
+  li
+  .btn_best_product
+  .best_product_text_wrap
+  .best_product_sale_price_wrap
+  .store_deatail_source_price.nowon:after {
+  content: none;
+}
+.best_product_list
+  li
+  .btn_best_product
+  .best_product_text_wrap
+  .best_product_sale_price_wrap
+  .store_deatail_sale_price {
+  display: inline-block;
+  padding: 0 4px;
+  font-weight: 400;
+  font-size: 16px;
+  color: #6a6f77;
+  text-decoration: line-through;
+}
+.best_product_list
+  li
+  .btn_best_product
+  .best_product_text_wrap
+  .best_product_sale_price_wrap
+  .store_deatail_sale_price:after {
+  content: "원";
+}
+
+.best_product_list li:hover .btn_best_product .best_product_img_wrap:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 0.2;
+  z-index: 3;
+}
+.best_product_list li:hover .btn_best_product ~ a {
+  display: block;
+  position: absolute;
+  top: 85px;
+  width: 50px;
+  height: 50px;
+  font-size: 0;
+}
+.best_product_list li:hover .btn_best_product_cart {
+  left: 25px;
+  background: url("http://img.cgv.co.kr/r2014/images/giftstore/common/bg_icon_setBtn.png") -1px -1px
+    scroll no-repeat;
+  z-index: 2;
+}
+.best_product_list li:hover .btn_best_product_cart:hover {
+  background-position: -157px -1px;
+}
+.best_product_list li:hover .btn_best_product_buy {
+  right: 25px;
+  background: url("http://img.cgv.co.kr/r2014/images/giftstore/common/bg_icon_setBtn.png") -105px -1px
+    scroll no-repeat;
+  z-index: 4;
+}
+.best_product_list li:hover .btn_best_product_buy:hover {
+  background-position: -261px -1px;
+}
+.best_product_list li.state_giftcard:hover .btn_best_product_gift {
+  left: 55px;
+}
+.best_product_list li.state_giftcard:hover .btn_best_product_buy {
+  right: 55px;
+}
+
+.best_product_list li.active .btn_best_product .best_product_img_wrap:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 0.2;
+  z-index: 3;
+}
+.best_product_list li.active .btn_best_product ~ a {
+  display: block;
+  position: absolute;
+  top: 85px;
+  width: 50px;
+  height: 50px;
+  font-size: 0;
+}
+.best_product_list li.active .btn_best_product_cart {
+  left: 25px;
+  background: url("http://img.cgv.co.kr/r2014/images/giftstore/common/bg_icon_setBtn.png") -1px -1px
+    scroll no-repeat;
+  z-index: 2;
+}
+.best_product_list li.active .btn_best_product_cart:focus {
+  background-position: -157px -1px;
+}
+.best_product_list li.active .btn_best_product_gift:focus {
+  background-position: -209px -1px;
+}
+.best_product_list li.active .btn_best_product_buy {
+  right: 25px;
+  background: url("http://img.cgv.co.kr/r2014/images/giftstore/common/bg_icon_setBtn.png") -105px -1px
+    scroll no-repeat;
+  z-index: 4;
+}
+.best_product_list li.active .btn_best_product_buy:focus {
+  background-position: -261px -1px;
+}
+.best_product_list li.state_giftcard.active .btn_best_product_gift {
+  left: 55px;
+}
+.best_product_list li.state_giftcard.active .btn_best_product_buy {
+  right: 55px;
+}
+
+/* E 베스트상품 10 */
+
+/* S 선물추천 10 */
+.gift_recommend_wrap {
+  padding: 76px 0 98px;
+  font-family: "CJONLYONENEW";
+  text-align: center;
+  background-color: #f3ebea;
+}
+.gift_recommend_title {
+  display: block;
+  width: 980px;
+  margin: 0 auto;
+  font-family: "CJONLYONENEW";
+  font-weight: 500;
+  font-size: 18px;
+  color: #000;
+}
+.gift_recommend_title span {
+  display: block;
+  margin-top: 5px;
+  font-weight: 700;
+  font-size: 36px;
+}
+.gift_recommend_subtitle {
+  display: block;
+  width: 980px;
+  margin: 13px auto 0;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 27px;
+  color: #646464;
+}
+
+.gift_recommend_wrap .gift_recommend_list_wrap {
+  width: 913px;
+  margin: 24px auto 0;
+  padding: 0 14px 0 53px;
+}
+.gift_recommend_wrap .gift_recommend_list_wrap .bx-viewport {
+  height: 438px !important;
+}
+.gift_recommend_wrap .gift_recommend_list_wrap .bxslider li {
+  height: 438px;
+  background: transparent
+    url("http://img.cgv.co.kr/r2014/images/giftstore/common/bg_gift_recommend_list_default.png")
+    left top scroll no-repeat;
+}
+.gift_recommend_wrap
+  .gift_recommend_list_wrap
+  .bxslider
+  li
+  .gift_recommend_box
+  .btn_gift_recommend
+  .gift_recommend_img_wrap:after {
+  content: none;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 84px;
+  height: 84px;
+  background: transparent
+    url("http://img.cgv.co.kr/r2014/images/giftstore/common/bg_badge_set.png")
+    left top scroll no-repeat;
+  z-index: 2;
+}
+.gift_recommend_wrap
+  .gift_recommend_list_wrap
+  .bxslider
+  li.state_hotdeal
+  .gift_recommend_box
+  .btn_gift_recommend
+  .gift_recommend_img_wrap:after {
+  content: "";
+  background-position: left top;
+} /* 핫딜진행중 */
+.gift_recommend_wrap
+  .gift_recommend_list_wrap
+  .bxslider
+  li.state_giftcard
+  .btn_gift_recommend_gift {
+  left: 70px;
+}
+.gift_recommend_wrap
+  .gift_recommend_list_wrap
+  .bxslider
+  li.state_giftcard
+  .btn_gift_recommend_buy {
+  left: 130px;
+}
+
+.gift_recommend_box {
+  position: relative;
+  left: 7px;
+  top: 8px;
+  width: 250px;
+}
+.gift_recommend_box .btn_gift_recommend {
+  display: block;
+  position: relative;
+  height: 388px;
+}
+.gift_recommend_box .btn_gift_recommend ~ a {
+  position: absolute;
+  font-size: 0;
+  line-height: 0; /*display:none*/
+}
+.gift_recommend_box .btn_gift_recommend .gift_recommend_img_wrap {
+  display: block;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  z-index: 1;
+}
+.gift_recommend_box .btn_gift_recommend .gift_recommend_img_wrap img {
+  position: relative;
+  width: 100%;
+  z-index: 1;
+}
+
+.gift_recommend_box .btn_gift_recommend .gift_recommend_text_wrap {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 102px;
+  padding: 18px 19px;
+  font-family: "CJONLYONENEW";
+  text-align: left;
+}
+.gift_recommend_box
+  .btn_gift_recommend
+  .gift_recommend_text_wrap
+  .gift_recommend_text_title {
+  display: block;
+  padding-right: 38px;
+  font-weight: 500;
+  font-size: 16px;
+  color: #000;
+}
+.gift_recommend_box
+  .btn_gift_recommend
+  .gift_recommend_text_wrap
+  .gift_recommend_text_name {
+  display: block;
+  margin-top: 4px;
+  padding-right: 38px;
+  font-weight: 400;
+  font-size: 16px;
+  color: #6a6f77;
+}
+.gift_recommend_box
+  .btn_gift_recommend
+  .gift_recommend_text_wrap
+  .gift_recommend_sale_price_wrap {
+  display: block;
+  overflow: hidden;
+  position: absolute;
+  bottom: 16px;
+  padding-right: 38px;
+  letter-spacing: -0.25px;
+  line-height: 18px;
+}
+.gift_recommend_box
+  .btn_gift_recommend
+  .gift_recommend_text_wrap
+  .gift_recommend_sale_price_wrap
+  .sale_percent {
+  float: left;
+  padding-right: 4px;
+  font-weight: 500;
+  font-size: 17px;
+  color: #fb4357;
+  line-height: 19px;
+}
+.gift_recommend_box
+  .btn_gift_recommend
+  .gift_recommend_text_wrap
+  .gift_recommend_sale_price_wrap
+  .sale_percent:after {
+  content: "%";
+  font-size: 13px;
+}
+.gift_recommend_box
+  .btn_gift_recommend
+  .gift_recommend_text_wrap
+  .gift_recommend_sale_price_wrap
+  .store_deatail_source_price {
+  float: left;
+  padding-right: 8px;
+  font-weight: 400;
+  font-size: 18px;
+  color: #000;
+}
+.gift_recommend_box
+  .btn_gift_recommend
+  .gift_recommend_text_wrap
+  .gift_recommend_sale_price_wrap
+  .store_deatail_source_price:after {
+  content: "원";
+}
+.gift_recommend_box
+  .btn_gift_recommend
+  .gift_recommend_text_wrap
+  .gift_recommend_sale_price_wrap
+  .store_deatail_sale_price {
+  float: left;
+  font-weight: 400;
+  font-size: 16px;
+  color: #6a6f77;
+  text-decoration: line-through;
+}
+.gift_recommend_box
+  .btn_gift_recommend
+  .gift_recommend_text_wrap
+  .gift_recommend_sale_price_wrap
+  .store_deatail_sale_price:after {
+  content: "원";
+}
+
+.gift_recommend_box:hover .btn_gift_recommend .gift_recommend_img_wrap:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 0.2;
+  z-index: 3;
+}
+.gift_recommend_box:hover .btn_gift_recommend ~ a {
+  display: block;
+  position: absolute;
+  top: 101px;
+  width: 50px;
+  height: 50px;
+  font-size: 0;
+}
+.gift_recommend_box:hover .btn_gift_recommend_cart {
+  left: 40px;
+  background: url("http://img.cgv.co.kr/r2014/images/giftstore/common/bg_icon_setBtn.png") -1px -1px
+    scroll no-repeat;
+  z-index: 2;
+}
+.gift_recommend_box:hover .btn_gift_recommend_cart:hover {
+  background-position: -157px -1px;
+}
+
+.gift_recommend_box:hover .btn_gift_recommend_gift:hover {
+  background-position: -209px -1px;
+}
+.gift_recommend_box:hover .btn_gift_recommend_buy {
+  left: 100px;
+  background: url("http://img.cgv.co.kr/r2014/images/giftstore/common/bg_icon_setBtn.png") -105px -1px
+    scroll no-repeat;
+  z-index: 4;
+}
+.gift_recommend_box:hover .btn_gift_recommend_buy:hover {
+  background-position: -261px -1px;
+}
+
+.gift_recommend_list_wrap
+  li.active
+  .btn_gift_recommend
+  .gift_recommend_img_wrap:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 0.2;
+  z-index: 3;
+}
+.gift_recommend_list_wrap li.active .btn_gift_recommend ~ a {
+  display: block;
+  position: absolute;
+  top: 101px;
+  width: 50px;
+  height: 50px;
+  font-size: 0;
+}
+.gift_recommend_list_wrap li.active .btn_gift_recommend_cart {
+  left: 40px;
+  background: url("http://img.cgv.co.kr/r2014/images/giftstore/common/bg_icon_setBtn.png") -1px -1px
+    scroll no-repeat;
+  z-index: 2;
+}
+.gift_recommend_list_wrap li.active .btn_gift_recommend_cart:focus {
+  background-position: -157px -1px;
+}
+.gift_recommend_list_wrap li.active .btn_gift_recommend_buy {
+  left: 100px;
+  background: url("http://img.cgv.co.kr/r2014/images/giftstore/common/bg_icon_setBtn.png") -105px -1px
+    scroll no-repeat;
+  z-index: 4;
+}
+.gift_recommend_list_wrap li.active .btn_gift_recommend_buy:focus {
+  background-position: -261px -1px;
+}
+
+.gift_recommend_wrap .bx-wrapper .bx-controls .bx-controls-direction {
+  position: relative;
+  bottom: 240px;
+  width: 100%;
+  font-size: 0;
+}
+.gift_recommend_wrap .bx-wrapper .bx-controls .bx-controls-direction .bx-prev {
+  position: absolute;
+  left: -55px;
+  width: 18px;
+  height: 30px;
+  font-size: 0;
+  background: transparent
+    url("http://img.cgv.co.kr/r2014/images/giftstore/common/bg_arrowBtn1.png")
+    left top scroll no-repeat;
+}
+.gift_recommend_wrap .bx-wrapper .bx-controls .bx-controls-direction .bx-next {
+  position: absolute;
+  right: -16px;
+  width: 18px;
+  height: 30px;
+  font-size: 0;
+  background: transparent
+    url("http://img.cgv.co.kr/r2014/images/giftstore/common/bg_arrowBtn1.png")
+    left top scroll no-repeat;
+  transform: rotate(180deg);
+}
+/* E 선물추천 10 */
+
+/* S Category product */
+.category_product_wrap {
+  width: 980px;
+  margin: 0 auto;
+}
+.category_product_list {
+  overflow: hidden;
+}
+.category_product_list > li {
+  float: left;
+  width: 50%;
+  margin-top: 70px;
+  box-sizing: border-box;
+}
+.category_product_list > li:nth-child(even) {
+  padding-right: 30px;
+  clear: both;
+}
+.category_product_list > li:nth-child(odd) {
+  padding-left: 30px;
+}
+.category_product_list > li .category_product_title2 {
+  display: block;
+  position: relative;
+  width: 100%;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  font-family: "CJONLYONENEW";
+  font-weight: 500;
+  font-size: 28px;
+  color: #000;
+  line-height: 1em;
+  border-bottom: 2px solid #000;
+}
+.category_product_list > li .category_product_title2 .btn_category_product {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 4px;
+  width: 23px;
+  height: 23px;
+  font-size: 0;
+  background: transparent
+    url("http://img.cgv.co.kr/r2014/images/giftstore/common/bg_moreBtn.png")
+    left top scroll no-repeat;
+}
+.category_product_list > li:first-child {
+  width: 100%;
+  margin-top: 0;
+  padding: 0;
+}
+.category_product_list > li:first-child .category_product_title {
+  margin-bottom: 30px;
+  font-family: "CJONLYONENEW";
+}
+
+.category_product_inner_list {
+  overflow: hidden;
+}
+.category_product_inner_list li {
+  float: left;
+  position: relative;
+  width: 100%;
+  margin-top: 10px;
+}
+.category_product_inner_list li:first-child {
+  margin-top: 0;
+}
+.category_product_inner_list li .btn_category_product {
+  display: block;
+  overflow: hidden;
+  position: relative;
+}
+.category_product_inner_list li .btn_category_product .best_product_img_wrap {
+  display: block;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  width: 160px;
+  z-index: 1;
+}
+.category_product_inner_list
+  li
+  .btn_category_product
+  .best_product_img_wrap
+  img {
+  position: relative;
+  width: 100%;
+  z-index: 1;
+}
+.category_product_inner_list li .btn_category_product ~ a {
+  position: absolute;
+  font-size: 0;
+  line-height: 0; /*display:none*/
+}
+.category_product_inner_list
+  li.state_hotdeal
+  .btn_category_product
+  .best_product_img_wrap:after {
+  content: none;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 84px;
+  height: 84px;
+  background: transparent
+    url("http://img.cgv.co.kr/r2014/images/giftstore/common/bg_badge_set.png")
+    left top scroll no-repeat;
+  z-index: 2;
+}
+.category_product_inner_list
+  li.state_hotdeal
+  .btn_category_product
+  .best_product_img_wrap:after {
+  content: "";
+  background-position: left top;
+} /* 핫딜진행중 */
+.category_product_inner_list li .btn_category_product .best_product_text_wrap {
+  position: absolute;
+  top: 50%;
+  width: 280px;
+  padding-left: 20px;
+  font-family: "CJONLYONENEW";
+  transform: translate(0, -50%);
+  -webkit-transform: translate(0, -50%);
+  -moz-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  -o-transform: translate(0, -50%);
+}
+.category_product_inner_list
+  li
+  .btn_category_product
+  .best_product_text_wrap
+  .best_product_text_title {
+  display: block;
+  font-weight: 500;
+  font-size: 16px;
+  color: #000;
+}
+.category_product_inner_list
+  li
+  .btn_category_product
+  .best_product_text_wrap
+  .best_product_text_name {
+  display: block;
+  margin-top: 5px;
+  font-weight: 400;
+  font-size: 16px;
+  color: #6a6f77;
+}
+.category_product_inner_list
+  li
+  .btn_category_product
+  .best_product_text_wrap
+  .best_product_text_name
+  span {
+  padding-right: 4px;
+  color: #4e88cf;
+}
+.category_product_inner_list
+  li
+  .btn_category_product
+  .best_product_text_wrap
+  .best_product_sale_price_wrap {
+  display: block;
+  margin-top: 20px;
+  font-size: 0;
+  letter-spacing: -0.25px;
+  text-align: left;
+}
+.category_product_inner_list
+  li
+  .btn_category_product
+  .best_product_text_wrap
+  .best_product_sale_price_wrap
+  .sale_percent {
+  display: inline-block;
+  padding: 0;
+  font-weight: 500;
+  font-size: 17px;
+  color: #fb4357;
+}
+.category_product_inner_list
+  li
+  .btn_category_product
+  .best_product_text_wrap
+  .best_product_sale_price_wrap
+  .sale_percent:after {
+  content: "%";
+  font-size: 13px;
+}
+.category_product_inner_list
+  li
+  .btn_category_product
+  .best_product_text_wrap
+  .best_product_sale_price_wrap
+  .store_deatail_source_price {
+  display: inline-block;
+  padding: 0 4px;
+  font-weight: 400;
+  font-size: 18px;
+  color: #000;
+}
+.category_product_inner_list
+  li
+  .btn_category_product
+  .best_product_text_wrap
+  .best_product_sale_price_wrap
+  .store_deatail_source_price:after {
+  content: "원";
+}
+.category_product_inner_list
+  li
+  .btn_category_product
+  .best_product_text_wrap
+  .best_product_sale_price_wrap
+  .store_deatail_sale_price {
+  display: inline-block;
+  padding: 0 4px;
+  font-weight: 400;
+  font-size: 16px;
+  color: #6a6f77;
+  text-decoration: line-through;
+}
+.category_product_inner_list
+  li
+  .btn_category_product
+  .best_product_text_wrap
+  .best_product_sale_price_wrap
+  .store_deatail_sale_price:after {
+  content: "원";
+}
+
+.category_product_inner_list
+  li:hover
+  .btn_category_product
+  .best_product_img_wrap:before {
+  content: none;
+}
+.category_product_inner_list
+  li:hover
+  .btn_category_product
+  .best_product_text_wrap:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  opacity: 0.85;
+  z-index: 1;
+}
+.category_product_inner_list li:hover .btn_category_product ~ a {
+  display: block;
+  position: absolute;
+  top: 55px;
+  width: 50px;
+  height: 50px;
+  font-size: 0;
+}
+.category_product_inner_list li:hover .btn_category_product_cart {
+  left: 215px;
+  background: url("http://img.cgv.co.kr/r2014/images/giftstore/common/bg_icon_setBtn.png") -1px -1px
+    scroll no-repeat;
+  z-index: 2;
+}
+.category_product_inner_list li:hover .btn_category_product_cart:hover {
+  background-position: -157px -1px;
+}
+.category_product_inner_list li:hover .btn_category_product_buy {
+  left: 275px;
+  background: url("http://img.cgv.co.kr/r2014/images/giftstore/common/bg_icon_setBtn.png") -105px -1px
+    scroll no-repeat;
+  z-index: 4;
+}
+.category_product_inner_list li:hover .btn_category_product_buy:hover {
+  background-position: -261px -1px;
+}
+.category_product_inner_list
+  li.state_giftcard:hover
+  .btn_category_product_gift {
+  left: 245px;
+}
+.category_product_inner_list li.state_giftcard:hover .btn_category_product_buy {
+  left: 305px;
+}
+
+.category_product_inner_list
+  li.active
+  .btn_category_product
+  .best_product_img_wrap:before {
+  content: none;
+}
+.category_product_inner_list
+  li.active
+  .btn_category_product
+  .best_product_text_wrap:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  opacity: 0.85;
+  z-index: 1;
+}
+.category_product_inner_list li.active .btn_category_product ~ a {
+  display: block;
+  position: absolute;
+  top: 55px;
+  width: 50px;
+  height: 50px;
+  font-size: 0;
+}
+.category_product_inner_list li.active .btn_category_product_cart {
+  left: 215px;
+  background: url("http://img.cgv.co.kr/r2014/images/giftstore/common/bg_icon_setBtn.png") -1px -1px
+    scroll no-repeat;
+  z-index: 2;
+}
+.category_product_inner_list li.active .btn_category_product_cart:focus {
+  background-position: -157px -1px;
+}
+.category_product_inner_list li.active .btn_category_product_gift {
+  left: 275px;
+  background: url("http://img.cgv.co.kr/r2014/images/giftstore/common/bg_icon_setBtn.png") -53px -1px
+    scroll no-repeat;
+  z-index: 3;
+}
+.category_product_inner_list li.active .btn_category_product_gift:focus {
+  background-position: -209px -1px;
+}
+.category_product_inner_list li.active .btn_category_product_buy {
+  left: 335px;
+  background: url("http://img.cgv.co.kr/r2014/images/giftstore/common/bg_icon_setBtn.png") -105px -1px
+    scroll no-repeat;
+  z-index: 4;
+}
+.category_product_inner_list li.active .btn_category_product_buy:focus {
+  background-position: -261px -1px;
+}
+.category_product_inner_list
+  li.state_giftcard.active
+  .btn_category_product_gift {
+  left: 245px;
+}
+.category_product_inner_list
+  li.state_giftcard.active
+  .btn_category_product_buy {
+  left: 305px;
+}
+
+.category_product_list
+  > li:first-child.giftcard
+  .category_product_inner_list
+  li
+  .btn_category_product
+  .best_product_text_wrap
+  .best_product_text_title {
+  margin-top: 20px;
+}
+.category_product_list > li:first-child .category_product_inner_list li {
+  width: 220px;
+  margin-left: 33px;
+  margin-top: 0;
+}
+.category_product_list
+  > li:first-child
+  .category_product_inner_list
+  li:first-child {
+  margin-left: 0;
+}
+.category_product_list
+  > li:first-child
+  .category_product_inner_list
+  li:nth-child(3) {
+  margin-left: 34px;
+}
+.category_product_list
+  > li:first-child
+  .category_product_inner_list
+  li:hover
+  .btn_category_product
+  ~ a {
+  top: 85px;
+}
+.category_product_list
+  > li:first-child
+  .category_product_inner_list
+  li
+  .btn_category_product {
+  padding-bottom: 20px;
+}
+.category_product_list
+  > li:first-child
+  .category_product_inner_list
+  li
+  .btn_category_product
+  .best_product_img_wrap {
+  width: 100%;
+  float: none;
+}
+.category_product_list
+  > li:first-child
+  .category_product_inner_list
+  li
+  .btn_category_product
+  .best_product_text_wrap {
+  position: static;
+  width: 100%;
+  height: auto;
+  padding-left: 0;
+  transform: none;
+}
+.category_product_list
+  > li:first-child
+  .category_product_inner_list
+  li
+  .btn_category_product
+  .best_product_text_wrap
+  .best_product_text_title {
+  margin-top: 20px;
+}
+.category_product_list
+  > li:first-child
+  .category_product_inner_list
+  li:hover
+  .btn_category_product
+  .best_product_img_wrap:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 0.2;
+  z-index: 3;
+}
+.category_product_list
+  > li:first-child
+  .category_product_inner_list
+  li:hover
+  .btn_category_product
+  .best_product_text_wrap:before {
+  content: none;
+}
+
+.category_product_list
+  > li:first-child
+  .category_product_inner_list
+  li:hover
+  .btn_category_product_cart {
+  left: 50px;
+}
+.category_product_list
+  > li:first-child
+  .category_product_inner_list
+  li:hover
+  .btn_category_product_gift {
+  left: 85px;
+}
+.category_product_list
+  > li:first-child
+  .category_product_inner_list
+  li:hover
+  .btn_category_product_buy {
+  left: 115px;
+}
+.category_product_list
+  > li:first-child
+  .category_product_inner_list
+  li.state_giftcard:hover
+  .btn_category_product_gift {
+  left: 55px;
+}
+.category_product_list
+  > li:first-child
+  .category_product_inner_list
+  li.state_giftcard:hover
+  .btn_category_product_buy {
+  left: 115px;
+}
+
+.category_product_list
+  > li:first-child
+  .category_product_inner_list
+  li.active
+  .btn_category_product
+  ~ a {
+  top: 85px;
+}
+.category_product_list
+  > li:first-child
+  .category_product_inner_list
+  li.active
+  .btn_category_product
+  .best_product_img_wrap:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 0.2;
+  z-index: 3;
+}
+/* E Category product */
+
+/* S 이용안내 */
+.info_use_wrap {
+  overflow: hidden;
+  width: 980px;
+  margin: 0 auto;
+  font-family: "CJONLYONENEW";
+  border-top: 1px solid #b2b2b2;
+  border-bottom: 1px solid #b2b2b2;
+}
+.btn_info_use {
+  float: left;
+  display: block;
+  width: 534px;
+  padding: 25px 0 23px 43px;
+  background: transparent
+    url("http://img.cgv.co.kr/r2014/images/giftstore/bg_info_banner_icon.png")
+    376px 33px scroll no-repeat;
+}
+.btn_info_use_title {
+  display: block;
+  margin-top: 17px;
+  font-weight: 500;
+  font-size: 20px;
+  color: #000;
+  letter-spacing: -0.5px;
+}
+.btn_info_use_title:after {
+  content: "";
+  display: inline-block;
+  position: relative;
+  top: 2px;
+  left: 7px;
+  width: 12px;
+  height: 17px;
+  background: transparent
+    url("http://img.cgv.co.kr/r2014/images/giftstore/bg_info_use_arrow.png")
+    left top scroll no-repeat;
+}
+.btn_info_use_subtitle {
+  display: block;
+  margin-top: 12px;
+  margin-bottom: 11px;
+  font-weight: 400;
+  font-size: 15px;
+  color: #6a6f77;
+  line-height: 18px;
+}
+
+.info_use {
+  float: left;
+  width: 352px;
+  height: 100px;
+  margin: 25px 0 23px;
+  padding-left: 50px;
+  border-left: 1px solid #b2b2b2;
+}
+.info_use strong {
+  display: block;
+  margin-top: 2px;
+  font-family: "CJONLYONENEW";
+  font-weight: 400;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+  color: #000;
+}
+.info_use span {
+  display: block;
+  margin-top: 4px;
+  font-weight: 400;
+  font-size: 16px;
+  color: #6a6f77;
+}
+.info_use .info_use_telnum {
+  margin-top: 9px;
+  font-weight: 400;
+  font-size: 27px;
+  color: #444;
+}

@@ -1,0 +1,165 @@
+* {
+    text-decoration: none;
+}
+
+.row {
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+body {
+    font-size: 14px;
+    color: #666;
+    font-family: "Noto Sans KR", sans-serif;
+}
+
+.loginbox {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.loginbox h1 {
+    font-size: 21px;
+    font-weight: 1000;
+    margin: 17px 0;
+}
+
+.loginbox div {}
+
+.loginbox div input {
+    border: none;
+    border-bottom: 1px solid #b5b5b5
+}
+
+.loginbox div p:nth-child(1) label {
+    display: none;
+}
+
+.loginbox div p:nth-child(1) input {
+    background: url(../image/sprite_icon.png) 12px -230px no-repeat;
+    padding-left: 50px;
+    height: 30px;
+    width: 330px;
+}
+
+.loginbox div p:nth-child(2) label {
+    display: none;
+}
+
+.loginbox div p:nth-child(2) input {
+    background: url(../image/sprite_icon.png) 12px -261px no-repeat;
+    padding-left: 50px;
+    height: 30px;
+    width: 330px;
+}
+.id_save{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.id_save input{
+    margin: 0 0 0px 300px
+}
+
+.btn{
+}
+
+.btn button{
+    width: 400px;
+    height: 42px;
+    line-height: 37px;
+    padding: 2px;
+    background: linear-gradient(45deg, #FB4457, #EF642F);
+    border-radius: 24px;
+    border: 1px solid white;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    box-shadow: 0 8px 14px -5px rgba(0, 0, 0, 0.26);
+}
+
+.login-option{
+    margin-top: 10px;
+}
+
+.login-option a{
+    text-decoration: underline;
+}
+
+.login-option img{
+    padding-left: 5px;
+    padding-bottom: 5px;
+    margin-right: 10px;
+}
+
+.sns_login{
+    margin-top: 30px;
+    text-align: center;
+}
+.sns_login li{
+    text-align: center;
+}
+.sns_login li a{ 
+    display:inline-block; 
+    width: 400px;
+    height: 42px;
+    line-height:42px; 
+    text-align:center;
+    color:#fff; 
+    border-radius: 24px;
+    margin:5px 0;
+}
+.sns_login li:nth-child(1) a{
+    background:#ffea26 url(../img/ico_kakao.png) no-repeat 10px center/50px 50px; color:#000;
+}
+.sns_login li:nth-child(2) a{
+    background:#00c300 url(../img/ico_naver.png) no-repeat 10px center/50px 50px; 
+}
+.login_guide {
+    width: 940px;
+    height: 50px;
+    line-height: 50px;
+    text-align:center;
+    margin: 100px 0;
+    padding: 20px 20px;
+    font-size: 13px;
+    color: #666;
+    background-color: #EEEEEE;
+    display: flex;
+    position: relative;
+}
+
+.login_guide p a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.login_guide p:nth-child(1) {
+    font-weight: bolder;
+    font-size: 14px;
+    margin-left: 20px;
+}
+
+.login_guide p:nth-child(2) {
+    position: absolute;
+    left: 20%;
+}
+
+.login_guide p:nth-child(3) {
+    border: 1px solid black;
+    width: 100px;
+    height: 40px;
+    position: absolute;
+    left: 80%;
+    top: 25%;
+    line-height: 40px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.login_guide p:nth-child(3):hover {
+    background-color: #333;
+    transition: all 0.5s;
+    color: white;
+}

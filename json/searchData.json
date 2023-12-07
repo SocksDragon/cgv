@@ -1,0 +1,25 @@
+{
+  "movie": [
+    {
+      "name": "오펜하이머",
+      "director": "크리스토퍼 놀란",
+      "actors": "킬리언 머피,  에밀리 블런트,  맷 데이먼,  로버트 다우니 주니어,  플로렌스 퓨,  조쉬 하트넷,  케이시 애플렉,  라미 말렉,  케네스 브래너",
+      "price": 10000,
+      "genre": "스릴러, 드라마",
+      "sating": "15세이상관람가",
+      "showtime": "180분",
+      "mainSummary": "“나는 이제 죽음이요, 세상의 파괴자가 되었다.”",
+      "summary": "세상을 구하기 위해 세상을 파괴할 지도 모르는 선택을 해야 하는 천재 과학자의 핵개발 프로젝트.",
+      "releaseDate": "2023.08.15",
+      "reservationRate": "63.4%",
+      "imgAlt": "오펜하이머 포스터",
+      "image": [
+        "https://img.cgv.co.kr/Movie/Thumbnail/Trailer/87175/87175217720_1024.jpg",
+        "https://img.cgv.co.kr/Movie/Thumbnail/Trailer/87175/87175217600_1024.jpg",
+        "https://img.cgv.co.kr/Movie/Thumbnail/Trailer/87175/87175217533_1024.jpg",
+        "https://img.cgv.co.kr/Movie/Thumbnail/StillCut/000087/87175/87175217481_727.jpg",
+        "https://img.cgv.co.kr/Movie/Thumbnail/Poster/000087/87175/87175_320.jpg"
+      ]
+    }
+  ]
+}

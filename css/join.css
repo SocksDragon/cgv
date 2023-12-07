@@ -1,0 +1,139 @@
+.row {
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+body {
+    font-size: 14px;
+    color: #666;
+    font-family: "Noto Sans KR", sans-serif;
+}
+ul, li {
+    list-style: none;
+}
+
+#join h1 {
+    margin: 100px 0px 50px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+#join h1 span{
+    border-bottom: 1px solid black;
+}
+#join fieldset {
+    border: none;
+    text-align: center;
+}
+
+#join legend {
+    display: none;
+}
+.appForm .app_list {
+    padding: 15px 0;
+}
+
+.appForm .app_list li {
+    padding: 8px 0
+}
+
+.app_list li {
+    text-align: left;
+    display: flex;
+    margin: 10px 0;
+}
+.appForm .app_list li .tit_lbl {
+    float: left;
+    width: 150px;
+    line-height: 42px;
+    font-weight: bold;
+    font-size: 17px;
+    letter-spacing: -2px;
+    padding-left: 200px;
+    padding-right: 100px;
+}
+.appForm .app_list li .app_content {
+    float: right;
+    width: calc(100% - 150px);
+}
+
+.appForm input[type=text],
+.appForm input[type=password] {
+    height: 45px;
+    border: 1px solid #ccc;
+    width: 50%;
+    padding: 0 10px;
+}
+
+.appForm input[type=text]:hover,
+.appForm input[type=password]:hover {
+    background: #f1f1f1;
+}
+
+.appForm input.w160 {
+    width: 160px
+}
+.appForm .app_list .ico_space {
+    margin: 10px 0px;
+    font-size: 17px;
+}
+
+#email_list{
+    height: 45px;
+    line-height: 45px;
+}
+
+.appForm .idcheck {
+    display: inline-block;
+    height: 45px;
+    line-height: 45px;
+    padding: 0 10px;
+    background: #222222;
+    border-radius: 10px;
+    font-size: 14px;
+    color: #aaa;
+    text-decoration: none;
+}
+
+.radio_area .css-radio {
+    display: none;
+}
+
+.css-radio:checked+label {
+    background: #222222;
+}
+
+.radio_area label {
+    display: inline-block;
+    width: 60px;
+    text-align: center;
+    background: #999;
+    color: #fff;
+    border-radius: 99px;
+    /* padding:5px 0; */
+    height: 30px;
+    line-height: 30px;
+    margin: 5px 5px;
+}
+
+.btn_line {
+    border: 0px solid black;
+    padding: 20px 0;
+}
+
+.btn_line .btn {
+    width: 300px;
+    height: 50px;
+    border-radius: 300px;
+    border: 1px solid white;
+    background: linear-gradient(45deg, #D74357, #EF642F);
+    color: #FFFEFE;
+    font-weight: bolder;
+    font-size: 16px;
+    letter-spacing: 0px;
+    font-family: sans-serif;
+    /* box-shadow: 1px 3px 6px 0 rgba(0, 0, 0, 0.3); */
+
+}

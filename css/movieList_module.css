@@ -1,0 +1,632 @@
+@charset "utf-8";
+
+div[class^="sect-"] {
+  clear: both;
+  zoom: 1;
+}
+div[class^="sect-"]:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+div[class^="sect-"] .box-contents li a {
+  display: block;
+  font-weight: 500;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+/* div[class^="sect-"] .box-contents img{} */
+div[class^="sect-"] .btn-itemmore {
+  margin-top: 30px;
+}
+
+.box-image a {
+  display: block;
+}
+.box-image img {
+  width: 100%;
+}
+.thumb-image {
+  display: block;
+  position: relative;
+}
+.thumb-image .cgvIcon.etc {
+  position: absolute;
+  left: 5px;
+  top: 5px;
+}
+/* 예매링크 */
+.link-reservation {
+  display: inline-block;
+  width: 91px;
+  height: 35px;
+  background: url("https://img.cgv.co.kr/R2014/images/sprite/sprite_btn.png") 0
+    0 no-repeat;
+  font: 0/0 a;
+  zoom: 1;
+  vertical-align: top;
+}
+
+/* 레이어 팝업 닫기 버튼 */
+.btn-close,
+.layer-wrap .popwrap button[type="button"].btn-close {
+  display: block;
+  position: absolute;
+  top: 20px;
+  left: auto;
+  right: 20px;
+  width: 18px;
+  height: 18px;
+  background: url(https://img.cgv.co.kr/R2014/images/sprite/sprite_btn.png)
+    no-repeat -72px -62px;
+  border: none;
+  font-size: 0px;
+  line-height: 0;
+  zoom: 1;
+}
+
+[class|="sect"][class*="chart"] > ol {
+  padding-top: 30px;
+  margin-left: -64px;
+  zoom: 1;
+}
+[class|="sect"][class*="chart"] > ol:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+[class|="sect"][class*="chart"] > h4 {
+  margin-top: 30px;
+  color: #222222;
+  font-size: 21px;
+  border-bottom: 1px solid rgb(199, 199, 199);
+  padding-bottom: 10px;
+  font-weight: 500;
+  margin-top: 30px;
+  color: #222222;
+  font-size: 21px;
+  font-weight: 500;
+}
+[class|="sect"][class*="chart"] > h4 + ol {
+  padding-top: 20px;
+}
+[class|="sect"][class*="chart"] > h3:first-child + ol,
+[class|="sect"][class*="chart"] > h4:first-child + ol {
+  padding-top: 0;
+}
+[class|="sect"][class*="chart"] > h3:first-child + ol .rank,
+[class|="sect"][class*="chart"] > h4:first-child + ol .rank,
+[class|="sect"][class*="chart"] > .spec + ol .rank {
+  background: #fb4357;
+}
+[class|="sect"][class*="chart"] > h3 {
+  margin-top: 30px;
+  color: #222222;
+  font-size: 21px;
+  font-weight: 500;
+}
+[class|="sect"][class*="chart"] > h3 + ol {
+  padding-top: 20px;
+}
+[class|="sect"][class*="chart"] > ol > li {
+  float: left;
+  width: 197px;
+  margin-left: 64px;
+  padding-bottom: 30px;
+}
+[class|="sect"][class*="chart"] > h4 + ol > li:first-child .title,
+[class|="sect"][class*="chart"] > h3 + ol > li:first-child .title {
+  width: 90%;
+}
+[class|="sect"][class*="chart"] .chart-ad {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+[class|="sect"][class*="chart"] .btn-more-fontbold {
+  float: right;
+  margin-top: 10px;
+}
+[class|="sect"][class*="chart"] .box-image {
+  position: relative;
+  width: 197px;
+  min-height: 272px;
+  margin-bottom: 10px;
+}
+/* [class|="sect"][class*="chart"] .thumb-image{  border: 6px solid #000000;} */
+[class|="sect"][class*="chart"] .thumb-image > img {
+  height: 260px;
+}
+[class|="sect"][class*="chart"] .screentype {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 29px;
+  padding-top: 27px;
+  background: url("https://img.cgv.co.kr/R2014/images/common/bg/bg_poster-gradation.png")
+    0 0 repeat-x;
+  text-align: center;
+}
+[class|="sect"][class*="chart"] .screentype a,
+[class|="sect"][class*="chart"] .screentype span {
+  width: 59px;
+  height: 20px;
+  text-align: center;
+  vertical-align: top;
+}
+[class|="sect"][class*="chart"] .screentype .imax {
+  background-position: 0 -780px;
+}
+[class|="sect"][class*="chart"] .screentype .threeD {
+  background-position: 0 -800px;
+}
+[class|="sect"][class*="chart"] .screentype .forDX {
+  background-position: 0 -820px;
+}
+[class|="sect"][class*="chart"] .screentype .soundX {
+  background-position: 0 -840px;
+}
+[class|="sect"][class*="chart"] .screentype .arthouse {
+  background-position: 0 -860px;
+}
+[class|="sect"][class*="chart"] .screentype .collage {
+  background-position: 0 -860px;
+}
+[class|="sect"][class*="chart"] .screentype .screenx {
+  background-position: 0 -880px;
+}
+[class|="sect"][class*="chart"] .screentype .gold {
+  background-position: 0 -900px;
+}
+[class|="sect"][class*="chart"] .screentype .cine {
+  background-position: 0 -920px;
+}
+
+[class|="sect"][class*="chart"] .rank {
+  display: block;
+  height: 28px;
+  margin-bottom: 4px; /*border: 6px solid #000000;*/
+  background: #333333;
+  color: #ffffff;
+  font-size: 19px;
+  text-align: center;
+  line-height: 28px;
+}
+[class|="sect"][class*="chart"] .rank.on {
+  background: #fb4357;
+}
+[class|="sect"][class*="chart"] .no1 {
+  position: absolute;
+  right: -15px;
+  bottom: -45px;
+  display: block;
+  width: 48px;
+  height: 74px;
+  background: url("https://img.cgv.co.kr/R2014/images/sprite/sprite_icon.png") -300px -20px
+    no-repeat;
+  font: 0/0 a;
+  zoom: 1;
+  z-index: 1;
+}
+
+[class|="sect"][class*="chart"] .title {
+  font-size: 15px;
+}
+[class|="sect"][class*="chart"] .score {
+  margin-top: 7px;
+}
+[class|="sect"][class*="chart"] .score .percent span {
+  display: inline-block;
+  margin-left: 10px;
+  vertical-align: top;
+}
+[class|="sect"][class*="chart"] .point {
+  margin-left: 2px;
+  padding-left: 6px;
+  background: url("https://img.cgv.co.kr/R2014/images/common/bg/bg_writeinfo.gif")
+    left 1px no-repeat;
+}
+[class|="sect"][class*="chart"] .point li {
+  margin-left: 2px;
+}
+[class|="sect"][class*="chart"] .txt-info {
+  margin-top: 3px;
+  height: 13px;
+  color: #666666;
+  font-weight: 500;
+  white-space: nowrap;
+}
+[class|="sect"][class*="chart"] .like {
+  display: block;
+  margin-top: 10px;
+  text-align: center;
+}
+[class|="sect"][class*="chart"] .btn-like {
+  width: 23px;
+  height: 23px;
+  background-position: -60px -66px;
+}
+[class|="sect"][class*="chart"] .btn-like.on {
+  background-position: -83px -66px;
+}
+[class|="sect"][class*="chart"] .count {
+  height: 25px;
+  line-height: 23px;
+  vertical-align: middle;
+}
+[class|="sect"][class*="chart"] .count strong {
+  padding: 0 4px;
+}
+[class|="sect"][class*="chart"] .count .corner-arrow {
+  left: -3px;
+  top: 50%;
+  width: 4px;
+  height: 6px;
+  margin-top: -4px;
+  background-position: -10px 0;
+  background-color: #ffffff;
+}
+[class|="sect"][class*="chart"] .link-reservation {
+  width: 57px;
+  height: 25px;
+  background-position: -96px 0px;
+}
+[class|="sect"][class*="chart"] .dday {
+  display: inline-block;
+}
+[class|="sect"][class*="chart"] .warp-chart-ad {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+[class|="sect"][class*="chart"] .spec {
+  padding: 20px 22px;
+  background: #f5f3e8;
+  line-height: 1.8;
+}
+[class|="sect"][class*="chart"] .spec dt {
+  width: 90px;
+  padding-left: 6px;
+  background: url("https://img.cgv.co.kr/R2014/images/common/bg/blit.gif") 0 7px
+    no-repeat;
+}
+[class|="sect"][class*="chart"] .spec dd {
+  padding-left: 96px;
+}
+[class|="sect"][class*="chart"] .sort {
+  margin: 40px 0 20px;
+  text-align: center;
+}
+
+/* [class|="sect"][class*="chart"] .list-more{} */
+[class|="sect"][class*="chart"] .list-more {
+  padding-top: 0px;
+}
+[class|="sect"][class*="chart"] .list-more li {
+  margin: 0 0 -3px 0;
+  padding: 30px 0 30px 64px;
+}
+[class|="sect"][class*="chart"] .list-more li:first-child,
+[class|="sect"][class*="chart"] .list-more li:first-child + li,
+[class|="sect"][class*="chart"] .list-more li:first-child + li + li,
+[class|="sect"][class*="chart"] .list-more li:first-child + li + li + li {
+  margin-top: 0;
+  border-top: none;
+}
+.wrap-movie-chart .box-contents {
+  height: 93px;
+}
+
+/* 기본정보 */
+/* [class|="sect-base"]{} */
+[class|="sect-base"] h3 {
+  font: 0/0 a;
+  zoom: 1;
+  height: auto;
+  margin: 0;
+  background: none;
+  text-align: left;
+}
+[class|="sect-base"] .box-image {
+  float: left;
+}
+[class|="sect-base"] .box-contents {
+  float: left;
+  position: relative;
+}
+[class|="sect-base"] .title strong {
+  color: #1a1919;
+  font-size: 25px;
+  vertical-align: middle;
+}
+[class|="sect-base"] .title p {
+  color: #666666;
+}
+[class|="sect-base"] .title em {
+  margin-left: 12px;
+}
+[class|="sect-base"] .title em.round-red span {
+  font-family: Verdana, Geneva, sans-serif;
+  font-weight: bold;
+  line-height: 23px;
+}
+[class|="sect-base"] .score {
+  margin-top: 25px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #d9d6c8;
+  font-size: 14px;
+}
+[class|="sect-base"] .point {
+  margin: 0 4px 0 2px;
+  padding-left: 7px;
+  background: url("https://img.cgv.co.kr/R2014/images/common/bg/bg_writeinfo.gif")
+    0 3px no-repeat;
+}
+[class|="sect-base"] .point ul {
+  margin-left: 3px;
+}
+[class|="sect-base"] .point li {
+  margin-top: 2px;
+}
+[class|="sect-base"] .screentype {
+  position: absolute;
+  right: 0;
+  top: 150px;
+}
+[class|="sect-base"] .screentype a {
+  margin-left: 9px;
+}
+[class|="sect-base"] .sns {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+[class|="sect-base"] .like {
+  margin-top: 22px;
+}
+
+[class|="sect-story"][class*="people"] {
+  margin-top: 28px;
+  color: #333333;
+}
+[class|="sect-story"][class*="people"] p {
+  margin-top: 15px;
+  line-height: 1.6;
+}
+
+/* 감독,출연 */
+/* [class|="sect-staff"]{} */
+/* [class|="sect-staff"] > ul{} */
+[class|="sect-staff"] > ul:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+[class|="sect-staff"] > ul > li {
+  float: left;
+}
+[class|="sect-staff"] > ul > li > .box-image {
+  width: 100px;
+  height: 136px;
+}
+[class|="sect-staff"] > ul > li > .box-image .thumb-image {
+  width: 100px;
+  height: 136px;
+  text-align: center;
+  overflow: hidden;
+}
+[class|="sect-staff"] li strong {
+  display: block;
+  width: 100%;
+  color: #333333;
+  font-weight: 500;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+[class|="sect-staff"] dt {
+  display: block;
+  margin-bottom: 3px;
+  color: #9d6024;
+  font-weight: 500;
+}
+[class|="sect-staff"] dt.mainactor {
+  color: #f76d22;
+  letter-spacing: -1px;
+}
+[class|="sect-staff"] dt.subactor {
+  color: #935e41;
+  letter-spacing: -1px;
+}
+[class|="sect-staff"] dd {
+  width: 100%;
+  color: #333333;
+  font-size: 13px;
+  font-weight: 300;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+[class|="sect-staff"] dd span {
+  display: block;
+  color: #999999;
+  font-size: 11px;
+  font-family: Verdana, Geneva, sans-serif;
+  font-weight: bold;
+}
+
+/* 감독출연 상세 */
+[class|="sect-staff"][class$="director"] > ul > li {
+  float: none;
+}
+[class|="sect-staff"][class$="director"] > ul > li {
+  margin-top: 20px;
+}
+[class|="sect-staff"][class$="director"] > ul > li > .box-image {
+  float: left;
+  margin-right: 20px;
+}
+[class|="sect-staff"][class$="director"] > ul > li > .box-contents {
+  float: left;
+  width: 174px;
+}
+[class|="sect-staff"][class$="director"] .movielist {
+  float: left;
+  width: 488px;
+  height: 137px;
+  overflow: hidden;
+  padding-left: 18px;
+  background: url("https://img.cgv.co.kr/R2014/images/common/bg/dot_vertical.gif")
+    0 0 repeat-y;
+}
+[class|="sect-staff"][class$="director"] .movielist p {
+  float: left;
+  width: 32px;
+  height: 37px;
+  background: url("https://img.cgv.co.kr/R2014/images/title/text_relationmovie.gif")
+    0 0 no-repeat;
+  font: 0/0 a;
+  zoom: 1;
+}
+/* [class|="sect-staff"][class$="director"] .movielist ul{ } */
+[class|="sect-staff"][class$="director"] .movielist li {
+  width: 73px;
+  margin-left: 20px;
+}
+[class|="sect-staff"][class$="director"] .movielist li:first-child {
+  margin-left: 10px;
+}
+[class|="sect-staff"][class$="director"] .movielist .box-image {
+  width: 73px;
+  height: 107px;
+}
+[class|="sect-staff"][class$="director"] .movielist .box-image img {
+  width: 73px;
+  height: 107px;
+}
+[class|="sect-staff"][class$="director"] .movielist li strong {
+  height: 25px;
+  margin-top: 5px;
+  color: #666666;
+  font-size: 11px;
+  font-weight: 300;
+  line-height: 13px;
+  white-space: normal;
+  text-overflow: clip;
+  overflow: hidden;
+}
+/* [class|="sect-staff"][class$="actor"]{} */
+[class|="sect-staff"][class$="actor"] > ul > li {
+  display: inline-block;
+  width: 50%;
+  height: 150px;
+}
+[class|="sect-staff"][class$="actor"] > ul > li > .box-image {
+  float: left;
+  margin-right: 20px;
+}
+[class|="sect-staff"][class$="actor"] > ul > li > .box-contents {
+  float: left;
+}
+[class|="sect-staff"][class$="actor"] > ul > li > .box-contents dl {
+  width: 270px;
+}
+[class|="sect-staff"][class$="actor"] .movielist {
+  float: left;
+  width: 270px;
+  margin-top: 10px;
+  padding-top: 15px;
+  background: url("https://img.cgv.co.kr/R2014/images/common/bg/dot_horizontal.gif")
+    0 0 repeat-x;
+}
+[class|="sect-staff"][class$="actor"] .movielist p {
+  font: 0/0 a;
+  zoom: 1;
+}
+[class|="sect-staff"][class$="actor"] .movielist li {
+  float: none;
+}
+[class|="sect-staff"][class$="actor"] .movielist li a {
+  display: block;
+}
+[class|="sect-staff"][class$="actor"] .movielist li strong {
+  color: #666666;
+  font-size: 11px;
+  font-weight: 300;
+  line-height: 18px;
+}
+
+/* 영화 차트 레이아웃 */
+/* [class|="wrap-movie"][class*="chart"]{} */
+[class|="wrap-movie"][class*="chart"] .tab-menu-line {
+  margin-top: 20px;
+}
+[class|="wrap-movie"][class*="chart"] .sect-movie-chart {
+  margin-top: 30px;
+}
+
+/* [class|="sect-base"][class$="people"]{} */
+[class|="sect-base"][class$="people"] .box-image {
+  margin-right: 40px;
+}
+[class|="sect-base"][class$="people"] .thumb-image {
+  width: 230px;
+  height: 260px;
+  overflow: hidden;
+  text-align: center;
+}
+/* [class|="sect-base"][class$="people"] .thumb-image img{ } */
+[class|="sect-base"][class$="people"] .box-contents {
+  width: 710px;
+}
+[class|="sect-base"][class$="people"] .spec {
+  height: 186px;
+  margin-top: 12px;
+  padding: 7px 0;
+  border-top: 2px solid #e3e2d8;
+  border-bottom: 2px solid #e3e2d8;
+  color: #333333;
+  line-height: 1.5;
+}
+[class|="sect-base"][class$="people"] .spec dt {
+  width: 105px;
+  color: #666666;
+  font-weight: 300;
+}
+[class|="sect-base"][class$="people"] .spec dd.site {
+  color: #c62424;
+  text-decoration: underline;
+}
+/* [class*="movielist"][class$="filmo"]{} */
+[class*="movielist"][class$="filmo"] ul {
+  margin-left: -20px;
+}
+[class*="movielist"][class$="filmo"] li {
+  width: 185px;
+  margin: 27px 0 0 20px;
+}
+[class*="movielist"][class$="filmo"] .thumb-image img {
+  width: 185px;
+  height: 260px;
+}
+[class*="movielist"][class$="filmo"] .box-contents {
+  margin-top: 17px;
+  color: #333333;
+  font-size: 13px;
+}
+[class*="movielist"][class$="filmo"] .box-contents strong {
+  display: block;
+  width: 100%;
+  font-weight: 500;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+[class*="movielist"][class$="filmo"] .box-contents strong span {
+  display: block;
+  margin-top: 5px;
+  color: #666666;
+  font-family: Verdana, Geneva, sans-serif;
+}

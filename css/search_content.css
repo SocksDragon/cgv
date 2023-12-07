@@ -1,0 +1,480 @@
+@charset "utf-8";
+
+/* S COMMON */
+/* S > BUTTON */
+.btn_wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+.btn_wrap a {
+  display: inline-flex;
+  justify-content: center;
+  margin-left: 3px;
+  text-align: center;
+}
+.btn_wrap a ~ a {
+  margin-left: 10px;
+}
+.btn_wrap .btn_style1 {
+  min-width: 110px;
+  width: auto;
+  height: auto;
+  padding: 9px 10px 11px;
+  font-weight: 500;
+  font-size: 14px;
+  color: #fff;
+  line-height: 20px;
+  background-color: #fb4357;
+  border: none medium transparent;
+  border-radius: 4px;
+}
+.btn_borderStyle1 {
+  min-width: 108px;
+  padding: 9px 10px 11px;
+  font-weight: 500;
+  font-size: 14px;
+  color: #222;
+  line-height: 18px;
+  border: 1px solid #d8d8d8;
+  border-radius: 4px;
+}
+.btn_borderStyle1:hover {
+  opacity: 0.8;
+}
+.btn_style1 {
+  min-width: 110px;
+  padding: 9px 10px 11px;
+  font-weight: 500;
+  font-size: 14px;
+  color: #fff;
+  line-height: 20px;
+  background-color: #fb4357;
+  border-radius: 4px;
+}
+.btn_style1:hover {
+  opacity: 0.8;
+}
+/* S > IMAGES */
+.img_wrap {
+  position: relative;
+  overflow: hidden;
+}
+.img_wrap > img {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: translate(0, -50%);
+}
+.img_wrap:hover > img {
+  transform: scale(1.1) translate(0, -45%);
+  transition: all 0.5s;
+}
+.img_wrap[data-scale="false"]:hover > img {
+  width: 100%;
+  transform: translate(0, -50%);
+  transition: none;
+}
+
+/* E Tooltip */
+
+/*테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트
+테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트
+테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트
+테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트
+테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트
+테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트
+테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트
+테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트
+테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트
+테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트
+테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트
+테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트
+테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트
+테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트
+테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트
+테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트
+테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트
+테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트
+테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트
+테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트
+테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트
+테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트
+테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트
+테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트
+ㅍ
+테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트
+테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트
+테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트
+테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트*/
+
+/* E CGV 할인정보 */
+
+/* S 검색 */
+/* .search_wrap{} */
+.search_wrap:after {
+  content: "";
+  clear: both;
+  display: block;
+  font-size: 0;
+  line-height: 0;
+}
+.search_wrap .search_title {
+  display: block;
+  padding-top: 50px;
+  font-weight: 400;
+  font-size: 20px;
+  color: #222;
+}
+.search_wrap .search_title span {
+  padding-left: 4px;
+  font-weight: 700;
+}
+.search_wrap .search_title span:after {
+  content: "건";
+}
+
+.search_wrap > *:first-child {
+  margin-top: 0;
+  border-top: none;
+}
+
+.search_wrap li .img_wrap {
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  width: 260px;
+  height: 371px;
+  margin-right: 30px;
+  background-color: #e4e4e4;
+  border-radius: 10px;
+}
+
+.search_wrap ~ .col-aside {
+  position: absolute;
+  right: -180px;
+  top: 94px;
+  z-index: 1;
+}
+
+/* S > 검색어 관리 */
+.searchTermManagement + .searchingMovieResult_wrap {
+  border-top: none medium transparent;
+}
+.searchTermManagement + .searchingMovieResult_wrap .search_title {
+  padding-top: 0;
+}
+
+.searchTermManagement {
+  margin-bottom: 24px;
+}
+.searchTermManagement_list {
+  padding-top: 60px;
+}
+.searchTermManagement_list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 29px;
+  background-color: #fbfbfb;
+  border: 1px solid #e4e4e4;
+  border-radius: 8px;
+}
+.searchTermManagement_list li ~ li {
+  margin-top: 10px;
+}
+.searchTermManagement_list li.searchTermManagement_btnWrap {
+  justify-content: center;
+  padding: 0;
+  background-color: #fff;
+}
+.searchTermManagement_list li.searchTermManagement_btnWrap a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 15px;
+  font-size: 1.231em;
+  line-height: 1.875em;
+}
+.searchTermManagement_list li.searchTermManagement_btnWrap a i {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-left: 10px;
+}
+.searchTermManagement_list li.searchTermManagement_btnWrap a i img {
+  width: 100%;
+  height: 100%;
+}
+.searchTermManagement_list li .img_wrap {
+  width: 68px;
+  height: 68px;
+  border-radius: 50%;
+  border: 1px solid #e6e6e6;
+}
+.searchTermManagement_list li .searchTermManagement_txt_wrap {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  width: calc(100% - 240px);
+  padding-right: 30px;
+  font-size: 1.231em;
+  color: #222;
+}
+.searchTermManagement_list li .searchTermManagement_txt_wrap .txt_title {
+  font-weight: 500;
+  font-size: 1.25em;
+  line-height: 1.45em;
+}
+.searchTermManagement_list
+  li
+  .searchTermManagement_txt_wrap
+  .txt_title
+  .txt_url {
+  padding-left: 8px;
+  font-weight: 400;
+  font-size: 0.6em;
+  color: #999;
+  line-height: 1.417em;
+  vertical-align: middle;
+}
+.searchTermManagement_list li .searchTermManagement_txt_wrap .txt_description {
+  margin-top: 3px;
+  line-height: 1.875em;
+}
+
+.searchTermManagement_list li .btn_searchTermManagementLink {
+  padding: 9px 28px;
+  font-weight: 500;
+  font-size: 1.077em;
+  color: #222;
+  line-height: 1.429em;
+  background-color: #fff;
+  border: 1px solid #d8d8d8;
+  border-radius: 4px;
+}
+
+/* S > 지금 예매 가능한 영화 */
+.preOrderMovie_list {
+  overflow: hidden;
+}
+.preOrderMovie_list li {
+  float: left;
+  overflow: hidden;
+  position: relative;
+  width: calc(50% - 30px);
+  margin-top: 60px;
+  margin-right: 30px;
+}
+.preOrderMovie_list li:nth-child(2n + 3) {
+  margin-left: 30px;
+  margin-right: 0;
+}
+.preOrderMovie_list li .img_wrap {
+  display: block;
+  float: left;
+  width: 170px;
+  height: 242px;
+  margin-right: 20px;
+}
+.preOrderMovie_list li .preOrderMovie_info_wrap {
+  float: left;
+  overflow: hidden;
+  width: calc(100% - 190px);
+}
+.preOrderMovie_list li .preOrderMovie_info_wrap .preOrderMovieName {
+  display: block;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  max-width: calc(100% - 28px);
+  padding-right: 28px;
+  font-weight: 400;
+  font-size: 21px;
+  color: #222;
+  line-height: 30px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.preOrderMovie_list
+  li
+  .preOrderMovie_info_wrap
+  .preOrderMovieName
+  .cgvIcon.etc {
+  position: absolute;
+  right: 0;
+  top: 7px;
+  width: 20px;
+  height: 20px;
+}
+.preOrderMovie_list li .preOrderMovie_info_wrap .preOrderMovieName + span {
+  clear: both;
+}
+.preOrderMovie_list li .preOrderMovie_info_wrap > span {
+  display: block;
+  float: left;
+  margin-top: 9px;
+  font-size: 13px;
+  color: #222;
+  line-height: 19px;
+}
+.preOrderMovie_list li .preOrderMovie_info_wrap > span ~ span {
+  position: relative;
+  padding-left: 15px;
+}
+.preOrderMovie_list li .preOrderMovie_info_wrap > span ~ span:before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 6px;
+  top: 50%;
+  width: 1px;
+  height: 8px;
+  margin-top: -5px;
+  background-color: #e0e0e0;
+}
+.preOrderMovie_list li .preOrderMovie_info_wrap > span img {
+  width: 16px;
+  height: 16px;
+  margin-top: 2px;
+  vertical-align: top;
+}
+.preOrderMovie_list li .preOrderMovie_info_wrap .screenType_wrap {
+  display: flex;
+  clear: both;
+  float: left;
+  margin-top: 11px;
+  padding: 0 1px;
+}
+.preOrderMovie_list li .preOrderMovie_info_wrap .screenType_wrap .screenType {
+  padding: 3px 2px;
+  border: 1px solid #d8d8d8;
+  border-radius: 3px;
+}
+.preOrderMovie_list
+  li
+  .preOrderMovie_info_wrap
+  .screenType_wrap
+  .screenType
+  ~ .screenType {
+  margin-left: 5px;
+}
+.preOrderMovie_list
+  li
+  .preOrderMovie_info_wrap
+  .screenType_wrap
+  .screenType
+  img {
+  width: auto;
+  height: 8px;
+}
+.preOrderMovie_list li .preOrderMovie_info_wrap .preOrderMovie_explicate {
+  clear: both;
+  display: -webkit-box;
+  float: left;
+  overflow: hidden;
+  height: 89px;
+  margin: 15px 0 10px;
+  padding: 8px 1px 0;
+  font-size: 13px;
+  color: #222;
+  line-height: 30px;
+  border-top: 1px solid rgba(216, 216, 216, 0.7);
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+.preOrderMovie_list li .preOrderMovie_info_wrap .btn_wrap {
+  position: absolute;
+  bottom: 0;
+}
+.preOrderMovie_list li .preOrderMovie_info_wrap .btn_wrap a:first-child {
+  margin-left: 0;
+}
+
+.preOrderMovie_list li:first-child {
+  width: 100%;
+  margin-top: 30px;
+}
+.preOrderMovie_list li:first-child .img_wrap {
+  width: 260px;
+  height: 371px;
+  margin-right: 30px;
+}
+.preOrderMovie_list li:first-child .preOrderMovie_info_wrap {
+  width: calc(100% - 290px);
+}
+.preOrderMovie_list li:first-child .preOrderMovie_info_wrap .preOrderMovieName {
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 44px;
+}
+/* S > 영화검색 결과 */
+.searchingMovieResult_wrap {
+  margin-top: 60px;
+  border-top: 1px solid rgba(216, 216, 216, 0.7);
+}
+.searchingMovieResult_info_wrap .searchingMovieName {
+  display: block;
+  float: left;
+  max-width: calc(100% - 28px);
+  overflow: hidden;
+  position: relative;
+  margin-top: 16px;
+  padding-right: 28px;
+  font-size: 20px;
+  color: #222;
+  line-height: 30px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.searchingMovieResult_info_wrap .searchingMovieName .cgvIcon.etc {
+  position: absolute;
+  right: 0;
+  top: 7px;
+  width: 20px;
+  height: 20px;
+}
+.searchingMovieResult_info_wrap .searchingMovieName + span {
+  clear: both;
+}
+.searchingMovieResult_info_wrap > span {
+  float: left;
+  margin-top: 6px;
+  font-weight: 400;
+  font-size: 14px;
+  color: #222;
+  line-height: 20px;
+  vertical-align: top;
+}
+.searchingMovieResult_info_wrap > span ~ span {
+  position: relative;
+  padding-left: 20px;
+}
+.searchingMovieResult_info_wrap > span ~ span:before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 9px;
+  top: 50%;
+  width: 1px;
+  height: 8px;
+  margin-top: -4px;
+  background-color: #e0e0e0;
+}
+.searchingMovieResult_info_wrap > span img {
+  width: 16px;
+  height: 16px;
+  margin-top: 2px;
+  vertical-align: top;
+}
+.searchingMovieResult_list li.noData {
+  width: 100%;
+  margin-left: 0;
+  text-align: center;
+}

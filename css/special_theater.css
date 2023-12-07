@@ -1,0 +1,214 @@
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Noto+Sans+KR&display=swap");
+
+.row {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+body {
+  font-size: 14px;
+  color: #666;
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+.specialtheater_title {
+  padding-top: 70px;
+  text-align: center;
+}
+
+.specialtheater_title strong {
+  font-weight: 400;
+  font-size: 3.462em;
+  color: #000;
+  letter-spacing: -0.020em;
+  line-height: 1.444em;
+}
+
+
+.specialtheater_title .specialtheater_hash_list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.specialtheater_title .specialtheater_hash_list li {
+  font-family: 'Poppins';
+  font-weight: 600;
+  font-size: 1.615em;
+  color: #999;
+  line-height: 2.462em;
+}
+.specialtheater_title .specialtheater_hash_list li ~ li {
+  margin-left: 15px;
+}
+
+.specialtheater_category_title_wrap{
+  display: flex;
+  align-items: center;
+  margin-top: 60px;
+} 
+
+.specialtheater_category_title_wrap .specialtheater_category_title {
+  padding: 0 0 0 9px;
+  font-family: 'Poppins';
+  font-weight: 600;
+  font-size: 2.154em;
+  color: #000;
+  line-height: 1.500em;
+  white-space: nowrap;
+}
+
+.specialtheater_category_title_wrap .specialtheater_category_comment {
+  display: inline-flex;
+  position: relative;
+  margin-left: 24px;
+  padding-left: 24px;
+  font-weight: 400;
+  font-size: 1.231em;
+  color: #666;
+}
+
+.img_wrap{
+  position: relative;
+  overflow: hidden;
+}
+
+ .img_wrap img {
+  transition: all 0.5s;
+}
+
+.img_wrap:hover img {
+  transform: scale(1.2);
+}
+
+.img_wrap > img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: translate(0, 0%);
+}
+
+.specialtheater_category_list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.specialtheater_category_list li {
+  width: 314px;
+  height: 314px;
+  margin: 13px 9px 5px
+}
+
+.specialtheater_category_list li a {
+  display: block;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px
+}
+
+.specialtheater_category_list li a .img_wrap {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 1
+}
+
+.specialtheater_category_list li a:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.05);
+  z-index: 2;
+  pointer-events: none
+}
+
+.specialtheater_category_list li a:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+  z-index: 3;
+  pointer-events: none
+}
+
+.specialtheater_category_list li a strong {
+  position: absolute;
+  bottom: 45px;
+  left: 25px;
+  font-family: 'Poppins';
+  font-weight: 700;
+  font-size: 1.923em;
+  color: #fff;
+  line-height: 1.520em;
+  z-index: 4
+}
+
+.specialtheater_category_list li a span {
+  display: block;
+  overflow: hidden;
+  position: absolute;
+  bottom: 25px;
+  left: 0;
+  max-width: 100%;
+  padding-left: 25px;
+  font-weight: 300;
+  font-size: 1.231em;
+  color: #fff;
+  line-height: 1.375em;
+  text-overflow: ellipsis;
+  box-sizing: border-box;
+  word-break: keep-all;
+  white-space: nowrap;
+  z-index: 5
+}
+
+.specialtheater_category_list li.wide {
+  width: 646px
+}
+
+.contents{
+  margin-bottom: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* 푸터 */
+#footer {
+  background: #f8f8f8;
+  padding: 30px 0px;
+  text-align: center;
+  font-size: 12px;
+  line-height: 18px;
+  color: #666;
+}
+
+#footer .info {
+  padding: 20px 0;
+}
+
+#footer .info p {
+  padding: 5px 20px;
+  text-align: left;
+}

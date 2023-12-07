@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Noto+Sans+KR&display=swap");
+.row {
+  width: 980px;
+  margin: 0 auto;
+}
+
+body {
+  font-size: 14px;
+  color: #666;
+  font-family: "Noto Sans KR", "CJONLYONENEW", "맑은 고딕", "돋움", Dotum,
+  sans-serif;
+}
+
+#section .article1 .tit-heading-wrap {
+  position: relative;
+  height: 60px;
+  border-bottom: 3px solid #241d1e;
+  margin-bottom: 50px;
+  margin-top: 30px;
+  padding-top: 30px;
+  width: 980px;
+}
+
+#section .article1 .tit-heading-wrap > h3 {
+  display: inline-block;
+  position: relative;
+  height: inherit;
+  margin: 0;
+  background-image: none;
+  color: #222;
+  font-weight: 500;
+  font-size: 26px;
+  text-align: left;
+  vertical-align: middle;
+}
+
+#section .article1 .sect-common {
+  background: url(../img/bg_showtimes_favorite.gif) no-repeat 0 0;
+  background-size: 100%;
+  width: 874px;
+  height: 450px;
+  padding: 60px 53px;
+}
+
+#section .article1 .sect-common .sect-city1 {
+  height: 42px;
+  line-height: 42px;
+  margin-top: 18px;
+  border-top: 3px solid #727171;
+  border-bottom: 3px solid #727171;
+}
+#section .article1 .sect-common .sect-city1 > ul {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 37px;
+}
+
+#section .article1 .sect-common .sect-city1 > ul > li {
+  font-size: 14px;
+  color: #dbdbdb;
+}
+
+#section .article1 .sect-common .sect-city1 > ul > li a {
+  /* padding: 0 19px; */
+}
+
+#section .article1 .sect-common .sect-city1 > ul > li:hover a {
+  color: #fff;
+}
+
+#section .article1 .sect-common .sect-city1 > ul > li a {
+  display: block;
+  text-align: center;
+}
+
+#section .article1 .sect-common .sect-city2.view > ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+#section .article1 .sect-common .sect-city2.unview > ul {
+  display: none;
+}
+#section .article1 .sect-common .sect-city2 > ul > li {
+  font-size: 12px;
+  color: #dbdbdb;
+  margin-top: 10px;
+}
+
+#section .article1 .sect-common .sect-city2 > ul > li a {
+  padding: 0 19px;
+  border-right: 1px solid #dbdbdb;
+}
+#section .article1 .sect-common .sect-city2 > ul > li:last-child a {
+  border-right: none;
+}
+
+#section .article1 .wrap-theater h3 {
+  max-width: 980px;
+  height: 41px;
+  margin: 30px 0 15px;
+  background: url(../img/bg_h3_line.jpg) repeat-x 0 50%;
+  line-height: 41px;
+  text-align: center;
+  font-weight: 500;
+}
+
+#section .article1 .sect-theater h4 {
+  padding-bottom: 5px;
+}
+
+#section .article1 .sect-theater h4 span {
+  color: #333333;
+  font-size: 29px;
+  font-weight: 500;
+  vertical-align: top;
+}
+
+#section .article1 .box-image img {
+  max-width: 980px;
+}
+
+#section .article1 .wrap-theaterinfo {
+  position: relative;
+  margin-bottom: 30px;
+}
+#section .article1 .wrap-theaterinfo .box-contents {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 920px;
+  padding: 20px 30px;
+  background: url(../img/bg_dim80.png) 0 0 repeat;
+  color: #fdfcf0;
+}
+
+#section .article1 .box-contents .theater-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+#section .article1 .wrap-theaterinfo .box-contents .theater-info .title {
+  padding-top: 20px;
+  width: 400px;
+  height: 70px;
+  color: #fdfcf0;
+  font-size: 15px;
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+#section .article1 .wrap-theaterinfo .box-contents .theater-info .txt-info {
+  padding-top: 20px;
+  width: 400px;
+  height: 70px;
+  color: #fdfcf0;
+  font-size: 15px;
+  text-align: center;
+  border-left: 1px solid rgba(255, 255, 255, 0.2);
+}

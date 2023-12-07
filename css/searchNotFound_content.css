@@ -1,0 +1,39 @@
+@charset "utf-8";
+
+.searchingMovieResult_list li.noData {
+  width: 100%;
+  margin-left: 0;
+  text-align: center;
+}
+.searchingMovieResult_list li.noData img {
+  width: 292px;
+  margin-top: 100px;
+}
+.searchingMovieResult_list li.noData strong {
+  display: block;
+  margin-top: 11px;
+  font-weight: 400;
+  font-size: 28px;
+  color: #222;
+  line-height: 1.429em;
+}
+.searchingMovieResult_list li.noData strong mark {
+  font-weight: 700;
+  color: #fb4357;
+  background-color: transparent;
+}
+.searchingMovieResult_list li.noData span {
+  display: block;
+  margin-top: 13px;
+  font-size: 20px;
+  color: #444;
+  line-height: 1.45em;
+}
+.searchingMovieResult_list li.noData p {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  margin-top: 31px;
+  padding-top: 21px;
+  border-top: 1px solid rgba(216, 216, 216, 0.7);
+}

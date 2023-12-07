@@ -1,0 +1,15 @@
+{
+  "movies": [
+    {
+      "movieName": "오펜하이머",
+      "images": ["", "", "", "", ""],
+      "videos": ["", "", "", "", ""],
+      "comments": [
+        {
+          "content": "개노잼이네",
+          "starRate": "1"
+        }
+      ]
+    }
+  ]
+}

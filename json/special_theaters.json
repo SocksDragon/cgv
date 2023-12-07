@@ -1,0 +1,94 @@
+{
+  "special": [
+    {
+      "title": "IMAX",
+      "contents": "궁극의 몰입감",
+      "image": "./img/특별관/궁극의 몰입감.jpg"
+    },
+    {
+      "title": "4DX",
+      "contents": "특별한 오감체험",
+      "image": "./img/특별관/특별한 오감체험.jpg"
+    },
+    {
+      "title": "4DX SCREEN",
+      "contents": "최대치의 공감각",
+      "image": "./img/특별관/최대치의 공감각.jpg"
+    },
+    {
+      "title": "SCREENX",
+      "contents": "3면 확장 스크린",
+      "image": "./img/특별관/3면 확장 스크린.jpg"
+    },
+    {
+      "title": "SPHEREX",
+      "contents": "진화된 스크린",
+      "image": "./img/특별관/진화된 스크린.jpg"
+    },
+    {
+      "title": "SOUNDX",
+      "contents": "3D 입체음향",
+      "image": "./img/특별관/3D 입체음향.jpg"
+    },
+    {
+      "title": "STARIUM",
+      "contents": "초대형 스크린",
+      "image": "./img/특별관/초대형 스크린.jpg"
+    },
+    {
+      "title": "DOLBY ATMOS",
+      "contents": "차세대 몰입형 사운드",
+      "image": "./img/특별관/차세대 몰입형 사운드.jpg"
+    },
+    {
+      "title": "PRIVATE BOX",
+      "contents": "박스형 프리미엄 상영관",
+      "image": "./img/특별관/박스형 프리미엄 상영관.jpg"
+    },
+    {
+      "title": "SUITE CINEMA",
+      "contents": "호텔형 프리미엄 상영관",
+      "image": "./img/특별관/호텔형 프리미엄 상영관.jpg"
+    },
+    {
+      "title": "CINE de CHEF",
+      "contents": "쉐프가 있는 영화관",
+      "image": "./img/특별관/쉐프가 있는 영화관.jpg"
+    },
+    {
+      "title": "TEMPUR CINEMA",
+      "contents": "리클라이닝 침대 상영관",
+      "image": "./img/특별관/리클라이닝 침대 상영관.jpg"
+    },
+    {
+      "title": "GOLD CLASS",
+      "contents": "프리미엄 소파 상영관",
+      "image": "./img/특별관/프리미엄 소파 상영관.jpg"
+    },
+    {
+      "title": "THE PRIVATE CINEMA",
+      "contents": "대관형 프리미엄 상영관",
+      "image": "./img/특별관/대관형 프리미엄 상영관.jpg"
+    },
+    {
+      "title": "PREMIUM",
+      "contents": "리클라이너 상영관",
+      "image": "./img/특별관/리클라이너 상영관.jpg"
+    },
+    {
+      "title": "CINE & FORET",
+      "contents": "자연 컨셉의 힐링 상영관",
+      "image": "./img/특별관/자연 컨셉의 힐링 상영관.jpg"
+    },
+    {
+      "title": "CINE & LIVING ROOM",
+      "contents": "신개념 소셜 상영관",
+      "image": "./img/특별관/신개념 소셜 상영관.jpg"
+    },
+    {
+      "title": "CINE KIDS",
+      "contents": "키즈 전용 상영관",
+      "image": "./img/특별관/키즈 전용 상영관.jpg"
+    }  
+  ]
+}

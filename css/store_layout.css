@@ -1,0 +1,39 @@
+@charset "utf-8";
+
+/* ===========================================
+   Grouping Class 
+============================================ */
+#cgvwrap .cgv-ad-wrap .sect-head-ad,
+.head,
+.im-wrap,
+#contents,
+.foot,
+.sect-smuse,
+.sect-cinfo {
+  position: relative;
+  width: 980px;
+  margin: 0 auto;
+}
+
+/* Heading Css (combo) */
+.tit-heading-wrap {
+  position: relative;
+  height: 60px;
+  border-bottom: 3px solid #241d1e;
+  margin-bottom: 50px;
+  margin-top: 30px;
+  padding-top: 30px;
+  max-width: 980px;
+}
+.tit-heading-wrap > h3 {
+  display: inline-block;
+  position: relative;
+  height: inherit;
+  margin: 0;
+  background-image: none;
+  color: #222;
+  font-weight: 500;
+  font-size: 26px;
+  text-align: left;
+  vertical-align: middle;
+}

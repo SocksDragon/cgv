@@ -1,0 +1,49 @@
+@charset "utf-8";
+
+/* ===========================================
+   Grouping Class 
+============================================ */
+#cgvwrap .cgv-ad-wrap .sect-head-ad,
+.head,
+.im-wrap,
+#contents,
+.foot,
+.sect-smuse,
+.sect-cinfo {
+  position: relative;
+  width: 980px;
+  margin: 0 auto;
+}
+
+slider button[type="button"] {
+  z-index: 20;
+}
+
+.slider > button[type="button"] {
+  position: absolute;
+  background-image: url(https://img.cgv.co.kr/r2014/images/sprite/sprite_btn.png);
+  background-repeat: no-repeat;
+  font: 0/0 a;
+  zoom: 1;
+}
+.slider > .btn-prev {
+  left: 19px;
+  background-position: 0 -97px;
+}
+
+.slider > .btn-next {
+  left: 923px;
+  background-position: -30px -97px;
+}
+.slider > .btn-prev,
+.slider > .btn-next,
+.slider > .btn-prev.dim,
+.slider > .btn-next.dim {
+  overflow: hidden;
+  top: 50%;
+  width: 26px;
+  height: 52px;
+  text-indent: 100%;
+  white-space: nowrap;
+  margin-top: -26px;
+}
