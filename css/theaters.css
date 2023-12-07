@@ -60,10 +60,6 @@ body {
   color: #dbdbdb;
 }
 
-#section .article1 .sect-common .sect-city1 > ul > li a {
-  /* padding: 0 19px; */
-}
-
 #section .article1 .sect-common .sect-city1 > ul > li:hover a {
   color: #fff;
 }
@@ -122,37 +118,4 @@ body {
 #section .article1 .wrap-theaterinfo {
   position: relative;
   margin-bottom: 30px;
-}
-#section .article1 .wrap-theaterinfo .box-contents {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 920px;
-  padding: 20px 30px;
-  background: url("../img/theater/bg_dim80.png") 0 0 repeat;
-  color: #fdfcf0;
-}
-
-#section .article1 .box-contents .theater-info {
-  display: flex;
-  justify-content: space-between;
-}
-
-#section .article1 .wrap-theaterinfo .box-contents .theater-info .title {
-  padding-top: 20px;
-  width: 400px;
-  height: 70px;
-  color: #fdfcf0;
-  font-size: 15px;
-  border-right: 1px solid rgba(255, 255, 255, 0.2);
-}
-
-#section .article1 .wrap-theaterinfo .box-contents .theater-info .txt-info {
-  padding-top: 20px;
-  width: 400px;
-  height: 70px;
-  color: #fdfcf0;
-  font-size: 15px;
-  text-align: center;
-  border-left: 1px solid rgba(255, 255, 255, 0.2);
 }
